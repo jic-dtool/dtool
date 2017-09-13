@@ -9,5 +9,6 @@ Content
 
    README
    quick_start_guide
+   python_api
    CHANGELOG
    LICENSE
