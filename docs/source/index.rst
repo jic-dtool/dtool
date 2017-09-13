@@ -10,5 +10,6 @@ Content
    README
    quick_start_guide
    python_api
+   creating_plugins
    CHANGELOG
    LICENSE
