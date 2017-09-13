@@ -1,6 +1,6 @@
 from setuptools import setup
 
-url = ""
+url = "https://github.com/jic-dtool/dtool"
 version = "1.0.0"
 readme = open('README.rst').read()
 
