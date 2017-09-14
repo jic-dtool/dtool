@@ -8,6 +8,7 @@ Content
    :maxdepth: 2
 
    README
+   installation_notes
    quick_start_guide
    python_api
    creating_plugins
