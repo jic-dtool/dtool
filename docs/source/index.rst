@@ -9,6 +9,7 @@ Content
 
    README
    installation_notes
+   philosophy
    quick_start_guide
    python_api
    creating_plugins
