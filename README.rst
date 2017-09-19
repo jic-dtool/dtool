@@ -1,6 +1,20 @@
 Dtool
 =====
 
+.. image:: https://badge.fury.io/py/dtool.svg
+   :target: http://badge.fury.io/py/dtool
+   :alt: PyPi package
+
+.. image:: https://readthedocs.org/projects/dtool/badge/?version=latest
+   :target: https://readthedocs.org/projects/dtool?badge=latest
+   :alt: Documentation Status
+
+- Documentation: http://dtool.readthedocs.io
+- Free software: MIT License
+
+Overview
+--------
+
 Dtool is a suite of software for managing scientific data and making it
 accessible programatically. It consists of a command line interface ``dtool``
 and a Python API: `dtoolcore <https://github.com/jic-dtool/dtoolcore>`_.
