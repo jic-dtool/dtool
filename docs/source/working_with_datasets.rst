@@ -60,14 +60,78 @@ total size is. This can be achieved using the ``dtool summary`` command.
 Listing the item identifiers in a dataset
 -----------------------------------------
 
+To list all the item identifiers in a dataset one can use the ``dtool
+identifiers`` command.
 
-Getting information about an item in a dataset
-----------------------------------------------
+.. code-block:: none
+
+    $ dtool identifiers ~/my_datasets/my_rnaseq_data
+    b0f92a668d24a3015692b0869e2b7590a62a380c
+    72b24007759c0086a316d13838021c2571853a16
+    d4e065787eab480e9cbd2bac6988bc7717464c83
+
+
+Finding out the size of an item in a dataset
+--------------------------------------------
+
+To find the size of a specific item in a dataset one can use the ``dtool item
+properties`` command. The command below accesses the properties of the item
+with the identifier ``58f50508c42a56919376132e36b693e9815dbd0c``.
+
+.. code-block:: none
+
+    dtool item properties ~/my_datasets/drone-images 58f50508c42a56919376132e36b693e9815dbd0c
+    {
+      "relpath": "IMG_8585.JPG",
+      "size_in_bytes": 2716446,
+      "utc_timestamp": 1505818439.0,
+      "hash": "dbcb0d6f22ec660fa4ac33b3d74556f3"
+    }
 
 
 Accessing the content of an item in a dataset
 ---------------------------------------------
 
+When all files are on local disk getting access to them is trivial.  However,
+when files are located in some object storage system in the cloud, access may
+be less trivial.
+
+Dtool solves this problem by providing a call to a method that returns an
+absolute path on local disk with a promise that the file requested will be
+available from there when the call returns the path.
+
+The dtool command line interface makes this call available as the command
+``dtool item fetch``.
+
+Below is an example of this command being used on a local disk file storage.
+
+.. code-block:: none
+
+    dtool item fetch ~/my_datasets/drone-images 58f50508c42a56919376132e36b693e9815dbd0c
+    /Users/olssont/my_datasets/drone-images/data/IMG_8585.JPG
+
+Below is an example of this command being used on a dataset in an iRODS zone
+called ``data_raw``.
+
+.. code-block:: none
+
+    $ dtool item fetch irods:///data_raw/1e47c076-2eb0-43b2-b219-fc7d419f1f16 3dce23b901709a24cfbb974b70c1ef132af10a67
+    /Users/olssont/.cache/dtool/irods/1e47c076-2eb0-43b2-b219-fc7d419f1f16/3dce23b901709a24cfbb974b70c1ef132af10a67.txt
+
 
 Processing all the items in a dataset
 -------------------------------------
+
+By combining the use of ``dtool identifiers`` and ``dtool item fetch`` it is
+possible to create basic Bash scripts to process all the items in a dataset.
+
+.. code-block:: none
+
+    $ DS_URI=~/my_datasets/my_rnaseq_data
+    $ for ITEM_ID in `dtool identifiers $DS_URI`;
+    > do ITEM_FPATH=`dtool item fetch $DS_URI $ITEM_ID`;
+    > echo $ITEM_FPATH;
+    > done
+    /Users/olssont/my_datasets/my_rnaseq_data/data/rna_seq_reads_2.fq
+    /Users/olssont/my_datasets/my_rnaseq_data/data/rna_seq_reads_3.fq
+    /Users/olssont/my_datasets/my_rnaseq_data/data/rna_seq_reads_1.fq
