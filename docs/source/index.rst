@@ -11,6 +11,7 @@ Content
    installation_notes
    philosophy
    quick_start_guide
+   working_with_datasets
    python_api
    creating_plugins
    CHANGELOG
