@@ -4,6 +4,7 @@
 
 .coverage
 .eggs
+.tox
 env
 build
 dist
