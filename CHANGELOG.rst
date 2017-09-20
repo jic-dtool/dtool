@@ -30,11 +30,11 @@ Fixed
 Security
 ^^^^^^^^
 
-[2.1.0] - 2017-09-20
+[2.0.1] - 2017-09-20
 --------------------
 
-Changed
-^^^^^^^
+Fixed
+^^^^^
 
 - Made version requirements of dtool sub-packages explicit
 
