@@ -4,9 +4,13 @@ Philosophy - what is a dtool dataset?
 What problem is dtool solving?
 ------------------------------
 
-Managing data as a collection of individual files is hard. Analysing that data will require that certain sets of files are present, understanding it requires suitable metadata, and copying or moving it while keeping its integrity is difficult.
+Managing data as a collection of individual files is hard. Analysing that data
+will require that certain sets of files are present, understanding it requires
+suitable metadata, and copying or moving it while keeping its integrity is
+difficult.
 
-Dtool solves this problem by packaging a collection of files and accompanying metadata into a unified whole.
+Dtool solves this problem by packaging a collection of files and accompanying
+metadata into a unified whole.
 
 What is a "dtool dataset"?
 --------------------------
