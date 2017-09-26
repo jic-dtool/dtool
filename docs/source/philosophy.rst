@@ -1,5 +1,5 @@
-Philosophy - what is a dtool dataset?
-=====================================
+Philosophy - what is dtool?
+===========================
 
 What problem is dtool solving?
 ------------------------------
