@@ -1,5 +1,5 @@
-Dtool
-=====
+Dtool: Manage Scientific Data
+=============================
 
 .. image:: https://badge.fury.io/py/dtool.svg
    :target: http://badge.fury.io/py/dtool
@@ -9,8 +9,8 @@ Dtool
    :target: https://readthedocs.org/projects/dtool?badge=latest
    :alt: Documentation Status
 
-Make your data more resilient, portable and easy to work with by packaging
-files & metadata into self contained datasets.
+*Make your data more resilient, portable and easy to work with by packaging
+files & metadata into self contained datasets.*
 
 - Documentation: http://dtool.readthedocs.io
 - Free software: MIT License
@@ -26,8 +26,10 @@ The ``dtool`` command line interface allows one to organise files into datasets
 and to move datasets between different storage solutions, for example from
 local disk to remote object storage. 
 
-The Python API gives complete access to the data and metadata in a dataset. It
-also allows datasets to be constructed programatically.
+The Python API gives complete access to the data and metadata in a dataset.  It
+makes it easy to create scripts for processing the items, or a subset of items,
+in a dataset. The Python API also allows datasets to be constructed
+programatically.
 
 Dtool is extensible, meaning that it is possible to create plugins both for
 adding functionality to the command line interface and for creating interfaces
