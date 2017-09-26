@@ -19,9 +19,13 @@ encapsulating both the data files and associated metadata in a dataset one is
 free to move the dataset around at will. The high level organisation of
 datasets can therefore evolve over time as data management processes change.
 
-The metadata in a dataset includes information that can be used to discover and
-access metadata and data files in a dataset. It is therefore easy to create
-scripts and pipelines to process the items, or a subset of items, in a dataset.
+Dtool also solves an issue of trust. By including file hashes as metadata
+it is possible to verify the integrity of a dataset after it has been moved to
+a new location or when coming back to a dataset after a period of time.
+
+It is possible to discover and access both metadata and data files in a
+dataset. It is therefore easy to create scripts and pipelines to process the
+items, or a subset of items, in a dataset.
 
 
 What is a "dtool dataset"?
