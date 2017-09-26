@@ -8,7 +8,7 @@ setup(
     name="dtool",
     packages=["dtool"],
     version=version,
-    description="Manage scientific data",
+    description="Package files and metadata into self contained datasets",
     long_description=readme,
     include_package_data=True,
     author="Tjelvar Olsson",
