@@ -10,7 +10,19 @@ suitable metadata, and copying or moving it while keeping its integrity is
 difficult.
 
 Dtool solves this problem by packaging a collection of files and accompanying
-metadata into a unified whole.
+metadata into a self contained and unified whole: a dataset.
+
+Having metadata separate from the data, for example in an Excel spread sheet
+with links to the data files, it becomes difficult to reorganise the data
+without fear of breaking links between the data and the metadata. By
+encapsulating both the data files and associated metadata in a dataset one is
+free to move the dataset around at will. The high level organisation of
+datasets can therefore evolve over time as data management processes change.
+
+The metadata in a dataset includes information that can be used to discover and
+access metadata and data files in a dataset. It is therefore easy to create
+scripts and pipelines to process the items, or a subset of items, in a dataset.
+
 
 What is a "dtool dataset"?
 --------------------------
