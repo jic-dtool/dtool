@@ -9,6 +9,9 @@ Dtool
    :target: https://readthedocs.org/projects/dtool?badge=latest
    :alt: Documentation Status
 
+Make your data more resilient, portable and easy to work with by packaging
+files & metadata into self contained datasets.
+
 - Documentation: http://dtool.readthedocs.io
 - Free software: MIT License
 
