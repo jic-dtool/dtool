@@ -15,7 +15,7 @@ using the ``dtool ls`` command.
     f416ded6-2f9a-4909-ab43-2447d0d1a0d4 - fishers-iris-data    - file:///Users/olssont/my_datasets/fishers-iris-data
     6847e637-a61c-4043-a9e2-bbf4ff6f6baa - my_rnaseq_data       - file:///Users/olssont/my_datasets/my_rnaseq_data
 
-.. info:: When using this command proto datasets are highlighted in red.
+.. tip:: When using this command proto datasets are highlighted in red.
 
 
 Verifying a dataset has not been modified since freezing it
