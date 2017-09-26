@@ -24,7 +24,8 @@ and a Python API: `dtoolcore <https://github.com/jic-dtool/dtoolcore>`_.
 
 The ``dtool`` command line interface allows one to organise files into datasets
 and to move datasets between different storage solutions, for example from
-local disk to remote object storage. 
+local disk to remote object storage. Importantly it also provides methods to
+verify that the transfer has been successful.
 
 The Python API gives complete access to the data and metadata in a dataset.  It
 makes it easy to create scripts for processing the items, or a subset of items,
