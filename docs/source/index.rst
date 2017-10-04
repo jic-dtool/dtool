@@ -12,6 +12,7 @@ files & metadata into self contained datasets.
    philosophy
    quick_start_guide
    working_with_datasets
+   configuring_storage_brokers
    python_api
    creating_plugins
    CHANGELOG
