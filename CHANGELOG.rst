@@ -30,6 +30,30 @@ Fixed
 Security
 ^^^^^^^^
 
+
+[2.1.0] - 2017-10-04
+--------------------
+
+Added
+^^^^^
+
+- ``dtool readme show`` command that returns the readme content
+- ``--quiet`` flag to ``dtool copy`` command
+
+Changed
+^^^^^^^
+
+- Improved the ``dtool readme --help`` output
+
+Fixed
+^^^^^
+
+- Progress bar now shows information on individual items being processed
+- ``dtool ls`` now works with relative paths
+- Fix defect where ``IrodsStorageBroker.put_item`` raised SystemError when
+  trying to overwrite an existing file
+
+
 [2.0.2] - 2017-09-25
 --------------------
 
