@@ -30,8 +30,19 @@ Fixed
 Security
 ^^^^^^^^
 
+[2.1.2] - 2017-10-05
+--------------------
+
+Fixed
+^^^^^
+
+- Set the correct dependency to actually get fix reported in 2.1.1
+
 [2.1.1] - 2017-10-05
 --------------------
+
+Fixed
+^^^^^
 
 - Fixed defect in iRODS storage broker where files with white space resulted in
   broken identifiers
