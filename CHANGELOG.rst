@@ -30,6 +30,12 @@ Fixed
 Security
 ^^^^^^^^
 
+[2.1.1] - 2017-10-05
+--------------------
+
+- Fixed defect in iRODS storage broker where files with white space resulted in
+  broken identifiers
+
 
 [2.1.0] - 2017-10-04
 --------------------
