@@ -18,7 +18,7 @@ dataset named ``fishers-iris-data`` in the current working directory.
 
 .. code-block:: none
 
-    dtool create fishers-iris-data
+    $ dtool create fishers-iris-data
 
 One can now add files to the dataset by moving/copying them to the
 ``fisher-iris-data/data`` directory, or by using the built in ``dtool add
@@ -27,7 +27,8 @@ proto dataset.
 
 .. code-block:: none
 
-    dtool add item iris.csv fishers-iris-data
+    $ touch iris.csv
+    $ dtool add item iris.csv fishers-iris-data
 
 Metadata describing the data is as important as the data itself. Metadata
 describing the dataset is stored in the file ``fisers-iris-data/README.yml``.
@@ -36,14 +37,27 @@ interactive``, which will prompt for input regarding the dataset.
 
 .. code-block:: none
 
-    dtool readme interactive fishers-iris-data
+    $ dtool readme interactive fishers-iris-data
+    description [Dataset description]: Fisher's classic iris data, but with an empty file :(
+    project [Project name]: Dtool demo
+    confidential [False]:
+    personally_identifiable_information [False]:
+    name [Your Name]: Tjelvar Olsson
+    email [olssont@nbi.ac.uk]:
+    username [olssont]:
+    creation_date [2017-10-06]:
+    Updated readme
+    To edit the readme using your default editor:
+    dtool readme edit fiser-iris-data
 
 Finally, to convert the proto dataset into a dataset one uses the ``dtool
 freeze`` command.
 
 .. code-block:: none
 
-    dtool freeze fishers-iris-data
+    $ dtool freeze fishers-iris-data
+    Generating manifest  [####################################]  100%  iris.csv
+    Dataset frozen fiser-iris-data
 
 
 Copying data from an external hard drive to remote storage as a dataset
@@ -63,19 +77,19 @@ directory to use for the symlink and creates a proto dataset named
 
 .. code-block:: none
 
-    dtool create bgi-sequencing-12345 . symlink
+    $ dtool create bgi-sequencing-12345 . symlink
 
 Again, adding metadata to the dataset is vital.
 
 .. code-block:: none
 
-    dtool readme interactive bgi-sequencing-12345
+    $ dtool readme interactive bgi-sequencing-12345
 
 One can then convert the proto dataset into a dataset by "freezing" it.
 
 .. code-block:: none
 
-    dtool freeze bgi-sequencing-12345
+    $ dtool freeze bgi-sequencing-12345
 
 It is now time to copy the dataset to the remote storage. The command below
 assumes that one has a working `iRODS <https://irods.org/>`_ server with a zone
@@ -85,7 +99,7 @@ iRODS ``/data_raw`` zone.
 
 .. code-block:: none
 
-    dtool copy bgi-sequencing-12345 /data_raw irods
+    $ dtool copy bgi-sequencing-12345 /data_raw irods
 
 The command above returns feedback on the URI used to identify the dataset in
 the remote storage. In this case
@@ -101,7 +115,10 @@ differences if the transfer was successful.
 
 .. code-block:: none
 
-    dtool diff bgi-sequencing-12345 irods:///data_raw/1e47c076-2eb0-43b2-b219-fc7d419f1f16
+    $ dtool diff bgi-sequencing-12345 irods:///data_raw/1e47c076-2eb0-43b2-b219-fc7d419f1f16
+
+By default only identifiers and file sizes are compared. To check file hashes
+make use of the ``--full`` option.
 
 .. warning:: When comparing datasets identifiers, sizes and hashes are
              compared. When checking that the hashes are identical the hashes
@@ -124,7 +141,7 @@ the dataset in iRODS to the current working directory.
 
 .. code-block:: none
 
-    dtool copy irods:///data_raw/1e47c076-2eb0-43b2-b219-fc7d419f1f16
+    $ dtool copy irods:///data_raw/1e47c076-2eb0-43b2-b219-fc7d419f1f16
 
 Note that on the local disk the dataset will use the name of the dataset rather
 than the UUID, in this example ``bgi-sequencing-12345``.
@@ -133,4 +150,4 @@ Again one can verify the data transfer using the ``dtool diff`` command.
 
 .. code-block:: none
 
-    dtool diff bgi-sequencing-12345 irods:///data_raw/1e47c076-2eb0-43b2-b219-fc7d419f1f16
+    $ dtool diff bgi-sequencing-12345 irods:///data_raw/1e47c076-2eb0-43b2-b219-fc7d419f1f16

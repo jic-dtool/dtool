@@ -9,7 +9,7 @@ fetch`` command.
 One can provide these configurations by exporting relevant environment variables.
 For example::
 
-    export DTOOL_IRODS_CACHE_DIRECTORY=/tmp/dtool/irods 
+    $ export DTOOL_IRODS_CACHE_DIRECTORY=/tmp/dtool/irods 
 
 Alternatively, if using the ``dtool`` command line interface one can set these
 variables in the file ``~/.config/dtool/dtool.json``. For example,

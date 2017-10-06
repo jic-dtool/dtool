@@ -27,16 +27,16 @@ when it was frozen.
 
 In the example below the dataset has been corrupted in three ways.
 
-1. The file ``rna_seq_reads_4.fq`` has been added to it
-2. The file ``rna_seq_reads_3.fq`` has been deleted from it
-3. The content of the file ``rna_seq_reads_1.fq`` has been modified
+1. The file ``rna_seq_reads_4.fq.gz`` has been added to it
+2. The file ``rna_seq_reads_3.fq.gz`` has been deleted from it
+3. The content of the file ``rna_seq_reads_1.fq.gz`` has been modified
 
 .. code-block:: none
 
     $ dtool verify ~/my_datasets/my_rnaseq_data
-    Unknown item: 49919bdae83011b96bf54d984735e24c4419feb5 rna_seq_reads_4.fq
-    Missing item: 72b24007759c0086a316d13838021c2571853a16 rna_seq_reads_3.fq
-    Altered item: d4e065787eab480e9cbd2bac6988bc7717464c83 rna_seq_reads_1.fq
+    Unknown item: 49919bdae83011b96bf54d984735e24c4419feb5 rna_seq_reads_4.fq.gz
+    Missing item: 72b24007759c0086a316d13838021c2571853a16 rna_seq_reads_3.fq.gz
+    Altered item: d4e065787eab480e9cbd2bac6988bc7717464c83 rna_seq_reads_1.fq.gz
 
 
 Reporting summary information about a dataset
@@ -80,7 +80,7 @@ with the identifier ``58f50508c42a56919376132e36b693e9815dbd0c``.
 
 .. code-block:: none
 
-    dtool item properties ~/my_datasets/drone-images 58f50508c42a56919376132e36b693e9815dbd0c
+    $ dtool item properties ~/my_datasets/drone-images 58f50508c42a56919376132e36b693e9815dbd0c
     {
       "relpath": "IMG_8585.JPG",
       "size_in_bytes": 2716446,
@@ -107,7 +107,7 @@ Below is an example of this command being used on a local disk file storage.
 
 .. code-block:: none
 
-    dtool item fetch ~/my_datasets/drone-images 58f50508c42a56919376132e36b693e9815dbd0c
+    $ dtool item fetch ~/my_datasets/drone-images 58f50508c42a56919376132e36b693e9815dbd0c
     /Users/olssont/my_datasets/drone-images/data/IMG_8585.JPG
 
 Below is an example of this command being used on a dataset in an iRODS zone
@@ -132,6 +132,6 @@ possible to create basic Bash scripts to process all the items in a dataset.
     > do ITEM_FPATH=`dtool item fetch $DS_URI $ITEM_ID`;
     > echo $ITEM_FPATH;
     > done
-    /Users/olssont/my_datasets/my_rnaseq_data/data/rna_seq_reads_2.fq
-    /Users/olssont/my_datasets/my_rnaseq_data/data/rna_seq_reads_3.fq
-    /Users/olssont/my_datasets/my_rnaseq_data/data/rna_seq_reads_1.fq
+    /Users/olssont/my_datasets/my_rnaseq_data/data/rna_seq_reads_2.fq.gz
+    /Users/olssont/my_datasets/my_rnaseq_data/data/rna_seq_reads_3.fq.gz
+    /Users/olssont/my_datasets/my_rnaseq_data/data/rna_seq_reads_1.fq.gz
