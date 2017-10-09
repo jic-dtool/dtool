@@ -17,6 +17,12 @@ using the ``dtool ls`` command.
 
 .. tip:: When using this command proto datasets are highlighted in red.
 
+.. tip:: The ``dtool ls`` command takes a URI. As such it can be used to list
+         the datasets in remote storage locations. The example below lists all
+         the datasets in an iRODS zone named ``data_raw``::
+
+            $ dtool ls irods:///data_raw
+
 
 Verifying a dataset has not been modified since freezing it
 -----------------------------------------------------------
@@ -69,6 +75,15 @@ identifiers`` command.
     b0f92a668d24a3015692b0869e2b7590a62a380c
     72b24007759c0086a316d13838021c2571853a16
     d4e065787eab480e9cbd2bac6988bc7717464c83
+
+
+.. tip:: Using ``dtool ls`` on a dataset URI results in a list of item
+         identifiers and relapths::
+
+            $ dtool ls ~/my_datasets/my_rnaseq_data
+            b0f92a668d24a3015692b0869e2b7590a62a380c - rna_seq_reads_2.fq.gz
+            72b24007759c0086a316d13838021c2571853a16 - rna_seq_reads_3.fq.gz
+            d4e065787eab480e9cbd2bac6988bc7717464c83 - rna_seq_reads_1.fq.gz
 
 
 Finding out the size of an item in a dataset
