@@ -10,6 +10,34 @@ This change log uses principles from `keep a changelog <http://keepachangelog.co
 Added
 ^^^^^
 
+
+Changed
+^^^^^^^
+
+
+Deprecated
+^^^^^^^^^^
+
+
+Removed
+^^^^^^^
+
+
+Fixed
+^^^^^
+
+
+Security
+^^^^^^^^
+
+
+[2.2.0] - 2017-10-09
+--------------------
+
+
+Added
+^^^^^
+
 - ``dtool ls`` can now be used to list the relpaths of the items in a dataset
 - ``-f/--full`` flag to ``dtool diff`` command to include checking of file
   hashes  
@@ -25,22 +53,11 @@ Changed
 - ``dtool verify`` now only compares identifiers and file sizes by default
 
 
-Deprecated
-^^^^^^^^^^
-
-
-Removed
-^^^^^^^
-
-
 Fixed
 ^^^^^
 
 - Made ``DiskStorageBroker.list_dataset_uris`` class method more robust
 
-
-Security
-^^^^^^^^
 
 [2.1.2] - 2017-10-05
 --------------------
