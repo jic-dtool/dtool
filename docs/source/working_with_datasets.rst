@@ -42,6 +42,15 @@ In the example below the dataset has been corrupted in three ways.
     $ dtool verify ~/my_datasets/my_rnaseq_data
     Unknown item: 49919bdae83011b96bf54d984735e24c4419feb5 rna_seq_reads_4.fq.gz
     Missing item: 72b24007759c0086a316d13838021c2571853a16 rna_seq_reads_3.fq.gz
+
+By default only identifiers and file sizes are compared. To check file hashes
+make use of the ``--full`` option.
+
+.. code-block:: none
+
+    $ dtool verify --full ~/my_datasets/my_rnaseq_data
+    Unknown item: 49919bdae83011b96bf54d984735e24c4419feb5 rna_seq_reads_4.fq.gz
+    Missing item: 72b24007759c0086a316d13838021c2571853a16 rna_seq_reads_3.fq.gz
     Altered item: d4e065787eab480e9cbd2bac6988bc7717464c83 rna_seq_reads_1.fq.gz
 
 
