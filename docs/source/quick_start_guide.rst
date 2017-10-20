@@ -99,7 +99,7 @@ iRODS ``/data_raw`` zone.
 
 .. code-block:: none
 
-    $ dtool copy bgi-sequencing-12345 /data_raw irods
+    $ dtool copy bgi-sequencing-12345 irods:///data_raw
 
 The command above returns feedback on the URI used to identify the dataset in
 the remote storage. In this case
@@ -141,7 +141,7 @@ the dataset in iRODS to the current working directory.
 
 .. code-block:: none
 
-    $ dtool copy irods:///data_raw/1e47c076-2eb0-43b2-b219-fc7d419f1f16
+    $ dtool copy irods:///data_raw/2e47c076-2eb0-43b2-b219-fc7d419f1f16 ./
 
 Note that on the local disk the dataset will use the name of the dataset rather
 than the UUID, in this example ``bgi-sequencing-12345``.
