@@ -31,6 +31,44 @@ Security
 ^^^^^^^^
 
 
+[2.3.0] - 2017-10-23
+--------------------
+
+Added
+^^^^^
+
+- ``pre_freeze_hoook`` to the stroage broker interface called at the beginning
+  of ``ProtoDataSet.freeze`` method.
+- ``--quiet`` flag to ``dtool create`` command
+- ``dtool overlay ls`` command to list the overlays in dataset
+- ``dtool overlay show`` command to show the content of a specific overlay
+
+
+Changed
+^^^^^^^
+
+- Improved speed of freezing a dataset in iRODS by making use of
+  caches to reduce the number of calls made to iRODS during this
+  process
+- ``dtool copy`` now specifies target location using URI rather than
+  using the ``--prefix`` and ``--storage`` arguments
+
+
+Fixed
+^^^^^
+
+- Made the ``DiskStorageBroker.create_structure`` method more robust
+- More informative error message when iRODS has not been configured
+- More informative error message when iRODS authentication times out
+- Stopped client hanging when iRODS authentication has timed out
+- storagebroker's ``put_item`` method now returns relpath
+- Made the ``IrodsStorageBroker.create_structure`` method more
+  robust by checking if the parent collection exists
+- Made error handling in ``dtool create`` more specific
+- Added propagation of original error message when ``StorageBrokerOSError``
+  captures in ``dtool create``
+
+
 [2.2.0] - 2017-10-09
 --------------------
 
