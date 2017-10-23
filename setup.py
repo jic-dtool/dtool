@@ -15,12 +15,12 @@ setup(
     author_email="tjelvar.olsson@jic.ac.uk",
     url=url,
     install_requires=[
-        "dtoolcore==2.8.3",
+        "dtoolcore==2.9.0",
         "dtool-cli==0.6.0",
-        "dtool-create==0.9.0",
-        "dtool-info==0.6.0",
+        "dtool-create==0.10.0",
+        "dtool-info==0.7.0",
         "dtool-symlink==0.1.0",
-        "dtool-irods==0.3.3",
+        "dtool-irods==0.4.0",
     ],
     download_url="{}/tarball/{}".format(url, version),
     license="MIT"
