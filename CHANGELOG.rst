@@ -31,6 +31,18 @@ Security
 ^^^^^^^^
 
 
+[2.3.1] - 2017-10-25
+--------------------
+
+Fixed
+^^^^^
+
+- More graceful exit if one presses Cancel in file browser when creating a
+  symlink dataset
+- Data directory now falls back on click command line prompt if TkInter has
+  issues when creating a symlink dataset
+
+
 [2.3.0] - 2017-10-23
 --------------------
 
