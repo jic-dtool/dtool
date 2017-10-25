@@ -31,6 +31,16 @@ Security
 ^^^^^^^^
 
 
+[2.3.2] - 2017-10-25
+--------------------
+
+Fixed
+^^^^^
+
+- Fixed issue where the symbolic link was not fully resolved when creating
+  a symlink dataset that used the terminal to prompt for the data directory
+
+
 [2.3.1] - 2017-10-25
 --------------------
 
