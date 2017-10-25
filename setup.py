@@ -19,7 +19,7 @@ setup(
         "dtool-cli==0.6.0",
         "dtool-create==0.10.0",
         "dtool-info==0.7.0",
-        "dtool-symlink==0.1.1",
+        "dtool-symlink==0.1.2",
         "dtool-irods==0.4.0",
     ],
     download_url="{}/tarball/{}".format(url, version),
