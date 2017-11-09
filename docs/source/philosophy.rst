@@ -56,9 +56,9 @@ RNA sequencing experiment.
     /Users/olssont/my_dataset
     ├── README.yml
     └── data
-        ├── rna_seq_reads_1.fq
-        ├── rna_seq_reads_2.fq
-        └── rna_seq_reads_3.fq
+        ├── rna_seq_reads_1.fq.gz
+        ├── rna_seq_reads_2.fq.gz
+        └── rna_seq_reads_3.fq.gz
 
 The ``README.yml`` file is where metadata used to describe the whole dataset is
 stored. The items of the dataset are stored in the directory named ``data``.
