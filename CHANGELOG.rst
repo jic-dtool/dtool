@@ -30,6 +30,36 @@ Fixed
 Security
 ^^^^^^^^
 
+[2.4.0] - 2017-12-14
+--------------------
+
+Added
+^^^^^
+
+- Ability to specify a custom README.yml template file path.
+- Ability to configure the full user name for the README.yml template using
+  ``DTOOL_USER_FULL_NAME``
+
+Fixed
+^^^^^
+
+- Made ``.dtool/manifest.json`` content created by DiskStorageBroker human
+  readable by adding new lines and indentation to the JSON formatting.
+- Made the DiskStorageBroker.list_overlay_names method more robust. It no
+  longer falls over if the ``.dtool/overlays`` directory has been lost, i.e. by
+  cloning a dataset with no overlays from a Git repository.
+- Fixed defect where an incorrect URI would get set on the dataset when using
+  ``DataSet.from_path`` class method on a relative path
+- Made the YAML output more pretty by adding more indentation.
+- Replaced hardcoded ``nbi.ac.uk`` email with configurable ``DTOOL_USER_EMAIL``
+  in the default README.yml template.
+- Fixed ``IrodsStorageBroker.generate_uri`` class method
+- Made ``.dtool/manifest.json`` content created by IrodsStorageBroker human
+  readable by adding new lines and indentation to the JSON formatting.
+- Added rule to catch ``CAT_INVALID_USER`` string for giving a more informative
+  error message when iRODS authentication times out
+
+
 
 [2.3.2] - 2017-10-25
 --------------------
