@@ -12,6 +12,8 @@ files & metadata into self contained datasets.
    philosophy
    quick_start_guide
    working_with_datasets
+   configuring_user_name_and_email
+   configuring_a_custom_readme_template
    configuring_storage_brokers
    python_api
    creating_plugins
