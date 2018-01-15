@@ -7,6 +7,12 @@ This change log uses principles from `keep a changelog <http://keepachangelog.co
 [Unreleased]
 ------------
 
+This release makes use of the dtoolcore version 3.0.0 API, which improves the
+handling of URIs and adds more metadata describing the structure of datasets.
+
+Another major feature of this release is the addition of an S3 storage broker
+that can be used to interact with Amazon's S3 object storage.
+
 Added
 ^^^^^
 
