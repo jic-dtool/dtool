@@ -7,12 +7,6 @@ This change log uses principles from `keep a changelog <http://keepachangelog.co
 [Unreleased]
 ------------
 
-This release makes use of the dtoolcore version 3.0.0 API, which improves the
-handling of URIs and adds more metadata describing the structure of datasets.
-
-Another major feature of this release is the addition of an S3 storage broker
-that can be used to interact with Amazon's S3 object storage.
-
 Added
 ^^^^^
 
@@ -35,6 +29,43 @@ Fixed
 
 Security
 ^^^^^^^^
+
+
+[3.0.0] - 2018-01-18
+--------------------
+
+This release makes use of the dtoolcore version 3.0.0 API, which improves the
+handling of URIs and adds more metadata describing the structure of datasets.
+
+Another major feature of this release is the addition of an S3 storage broker
+that can be used to interact with Amazon's S3 object storage.
+
+Added
+^^^^^
+
+- AWS S3 object storage broker
+- Writing of ``.dtool/structure.json`` file to the DiskStorageBroker; a file
+  for describing the structure of the dtool dataset in a computer readable format
+- Writing of ``.dtool/README.txt`` file to the DiskStorageBroker; a file
+  for describing the structure of the dtool dataset in a human readable format
+- Writing of ``.dtool/structure.json`` file to the IrodsStorageBroker; a file
+  for describing the structure of the dtool dataset in a computer readable format
+- Writing of ``.dtool/README.txt`` file to the IrodsStorageBroker; a file
+  for describing the structure of the dtool dataset in a human readable format
+
+
+Changed
+^^^^^^^
+
+- Make use of dtoolcore version 3 API
+
+
+Fixed
+^^^^^
+
+- Removed the historical ``dtool_readme`` key/value pair from the
+  administrative metadata (in the .dtool/dtool file)
+
 
 [2.4.0] - 2017-12-14
 --------------------
