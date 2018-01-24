@@ -10,6 +10,7 @@ One can provide these configurations by exporting relevant environment variables
 For example::
 
     $ export DTOOL_IRODS_CACHE_DIRECTORY=/tmp/dtool/irods 
+    $ export DTOOL_S3_CACHE_DIRECTORY=/tmp/dtool/s3 
 
 Alternatively, if using the ``dtool`` command line interface one can set these
 variables in the file ``~/.config/dtool/dtool.json``. For example,
@@ -18,6 +19,7 @@ variables in the file ``~/.config/dtool/dtool.json``. For example,
 
     {
        "DTOOL_IRODS_CACHE_DIRECTORY": "/tmp/dtool/irods"
+       "DTOOL_S3_CACHE_DIRECTORY": "/tmp/dtool/s3"
     }
 
 One may need to create this file if it does not already exist.
