@@ -21,7 +21,7 @@ using the ``dtool ls`` command.
          the datasets in remote storage locations. The example below lists all
          the datasets in an iRODS zone named ``data_raw``::
 
-            $ dtool ls irods:///data_raw
+            $ dtool ls irods:/data_raw
 
 
 Verifying a dataset has not been modified since freezing it
@@ -139,7 +139,7 @@ called ``data_raw``.
 
 .. code-block:: none
 
-    $ dtool item fetch irods:///data_raw/1e47c076-2eb0-43b2-b219-fc7d419f1f16 3dce23b901709a24cfbb974b70c1ef132af10a67
+    $ dtool item fetch irods:/data_raw/1e47c076-2eb0-43b2-b219-fc7d419f1f16 3dce23b901709a24cfbb974b70c1ef132af10a67
     /Users/olssont/.cache/dtool/irods/1e47c076-2eb0-43b2-b219-fc7d419f1f16/3dce23b901709a24cfbb974b70c1ef132af10a67.txt
 
 

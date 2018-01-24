@@ -77,7 +77,7 @@ directory to use for the symlink and creates a proto dataset named
 
 .. code-block:: none
 
-    $ dtool create bgi-sequencing-12345 . symlink
+    $ dtool create bgi-sequencing-12345 symlink:.
 
 Again, adding metadata to the dataset is vital.
 
@@ -99,11 +99,11 @@ iRODS ``/data_raw`` zone.
 
 .. code-block:: none
 
-    $ dtool copy bgi-sequencing-12345 irods:///data_raw
+    $ dtool copy bgi-sequencing-12345 irods:/data_raw
 
 The command above returns feedback on the URI used to identify the dataset in
 the remote storage. In this case
-``irods:///data_raw/1e47c076-2eb0-43b2-b219-fc7d419f1f16``.
+``irods:/data_raw/1e47c076-2eb0-43b2-b219-fc7d419f1f16``.
 
 The URI used to identify the dataset in iRODS uses the UUID of the dataset
 rather than the dataset's name. This is to avoid name clashes in the iRODS zone
@@ -115,7 +115,7 @@ differences if the transfer was successful.
 
 .. code-block:: none
 
-    $ dtool diff bgi-sequencing-12345 irods:///data_raw/1e47c076-2eb0-43b2-b219-fc7d419f1f16
+    $ dtool diff bgi-sequencing-12345 irods:/data_raw/1e47c076-2eb0-43b2-b219-fc7d419f1f16
 
 By default only identifiers and file sizes are compared. To check file hashes
 make use of the ``--full`` option.
@@ -141,7 +141,7 @@ the dataset in iRODS to the current working directory.
 
 .. code-block:: none
 
-    $ dtool copy irods:///data_raw/2e47c076-2eb0-43b2-b219-fc7d419f1f16 ./
+    $ dtool copy irods:/data_raw/2e47c076-2eb0-43b2-b219-fc7d419f1f16 ./
 
 Note that on the local disk the dataset will use the name of the dataset rather
 than the UUID, in this example ``bgi-sequencing-12345``.
@@ -150,4 +150,4 @@ Again one can verify the data transfer using the ``dtool diff`` command.
 
 .. code-block:: none
 
-    $ dtool diff bgi-sequencing-12345 irods:///data_raw/1e47c076-2eb0-43b2-b219-fc7d419f1f16
+    $ dtool diff bgi-sequencing-12345 irods:/data_raw/1e47c076-2eb0-43b2-b219-fc7d419f1f16
