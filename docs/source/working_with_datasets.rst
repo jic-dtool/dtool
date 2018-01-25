@@ -54,6 +54,22 @@ make use of the ``--full`` option.
     Altered item: d4e065787eab480e9cbd2bac6988bc7717464c83 rna_seq_reads_1.fq.gz
 
 
+Displaying the README descriptive metadata
+------------------------------------------
+
+To display the README metadata used to describe the dataset one can make use of
+the ``dtool readme show`` command.
+
+.. code-block:: none
+
+    $ dtool readme show ~/my_datasets/chrX-rna-seq
+    ---
+    description: RNA-seq sample data
+    creation_date: 2017-11-20
+    ftp: "ftp://ftp.ccb.jhu.edu/pub/RNAseq_protocol/"
+    doi: "10.1038/nprot.2016.095"
+
+
 Reporting summary information about a dataset
 ---------------------------------------------
 
