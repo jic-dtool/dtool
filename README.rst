@@ -43,6 +43,7 @@ The ``dtool`` Python package is a meta package that installs the packages:
 - `dtool-create <https://github.com/jic-dtool/dtool-create>`_ - CLI commands for creating datasets
 - `dtool-info <https://github.com/jic-dtool/dtool-info>`_ - CLI commands for getting information about datasets
 - `dtool-symlink <https://github.com/jic-dtool/dtool-symlink>`_ - storage broker interface allowing symlinking to data
+- `dtool-s3 <https://github.com/jic-dtool/dtool-s3>`_ - storage broker interface t S3 object storage
 - `dtool-irods <https://github.com/jic-dtool/dtool-irods>`_ - storage broker interface to iRODS
 
 Installation::
