@@ -15,10 +15,10 @@ setup(
     author_email="tjelvar.olsson@jic.ac.uk",
     url=url,
     install_requires=[
-        "dtoolcore==3.0.0",
+        "dtoolcore==3.1.0",
         "dtool-cli==0.6.0",
-        "dtool-create==0.12.0",
-        "dtool-info==0.8.0",
+        "dtool-create==0.13.0",
+        "dtool-info==0.9.0",
         "dtool-symlink==0.1.2",
         "dtool-irods==0.5.0",
         "dtool-s3==0.1.1",
