@@ -31,6 +31,17 @@ Security
 ^^^^^^^^
 
 
+[3.1.0] - 2018-02-05
+--------------------
+
+Added
+^^^^^
+
+- ``--resume`` option to ``dtool copy`` command
+- ``--quite`` and ``--verbose`` options to ``dtool ls`` and improved formatting
+- Add ``dtoolcore.copy_resume`` function
+
+
 [3.0.0] - 2018-01-18
 --------------------
 
