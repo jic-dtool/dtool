@@ -30,6 +30,20 @@ Fixed
 Security
 ^^^^^^^^
 
+[3.2.0] - 2018-02-09
+--------------------
+
+Release to make it easier to create symlink datasets in an automated fashion.
+
+Changed
+^^^^^^^
+
+- Simplified the way to specify the symbolic link path in the
+  SymLinkStorageBroker
+- The path to the data when creating a symlink dataset is now specified using the
+  ``-s/--symlink-path`` option rather than being something that is prompted for.
+  This makes it easier to create symlink datasets in an automated fashion.
+
 
 [3.1.0] - 2018-02-05
 --------------------
