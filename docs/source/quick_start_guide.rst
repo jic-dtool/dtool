@@ -71,13 +71,10 @@ reorganise the data before copying it to the remote storage system.
 In this case one can create a "symlink" dataset and copy that to the remote
 storage. A symlink dataset is a dataset where the data directory is a symlink
 to another location, for example the data directory on the external hard drive.
-The command below opens a file browser prompting the user to select the
-directory to use for the symlink and creates a proto dataset named
-``bgi-sequencing-12345`` in the current working directory (``.``).
 
 .. code-block:: none
 
-    $ dtool create bgi-sequencing-12345 symlink:.
+    $ dtool create bgi-sequencing-12345 --symlink-path /mnt/external-hard-drive
 
 Again, adding metadata to the dataset is vital.
 
