@@ -24,6 +24,19 @@ using the ``dtool ls`` command.
             $ dtool ls irods:/data_raw
 
 
+Generating an inventory of datasets
+-----------------------------------
+
+It is possible to generate CSV/TSV/HTML inventories of datasets in a directory
+or in another base URI such as an Amazon S3 bucket. For example, the command
+below is used to generate a HTML report of all the datasets in the
+s3://dtool-demo/ bucket.
+
+.. code-block:: none
+
+    $ dtool inventory --format html s3://dtool-demo/ > inventory.html
+
+
 Verifying a dataset has not been modified since freezing it
 -----------------------------------------------------------
 
