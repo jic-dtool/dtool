@@ -30,6 +30,15 @@ Fixed
 Security
 ^^^^^^^^
 
+[3.3.1] - 2018-05-18
+--------------------
+
+Fixed
+^^^^^
+
+- Defect where inventory html template is not included in Python package on PyPi
+
+
 [3.3.0] - 2018-05-18
 --------------------
 
