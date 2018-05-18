@@ -30,6 +30,28 @@ Fixed
 Security
 ^^^^^^^^
 
+[3.3.0] - 2018-05-18
+--------------------
+
+Added
+^^^^^
+
+- Add "created_at" key to the administrative metadata
+- ``dtool inventory`` command for generating csv/tsv/html inventories of collections
+  of datasets
+- Added support for ``-h`` flag as well as ``--help``
+- Added timestamp to logging output
+
+Fixed
+^^^^^
+
+- Improved handling of URIs in validation code
+- Fixed defect where running ``dtool item properties`` with an invalid identifier
+  resulted in a KeyError exception being propagated to the user
+- Fixed defect where ``dtool verify`` did not compare file sizes
+- Fixed timestamp defect in DiskStoragBroker
+
+
 [3.2.1] - 2018-05-01
 --------------------
 
