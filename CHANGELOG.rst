@@ -30,6 +30,16 @@ Fixed
 Security
 ^^^^^^^^
 
+[3.4.0] - 2018-05-24
+--------------------
+
+Added
+^^^^^
+
+- Pre-checks to 'dtool freeze' command to ensure that the item handles are sane, i.e. that they do not contain newline characters
+- Pre-checks to 'dtool freeze' command to ensure that there are not too many items in the proto dataset, default to less than 10000
+
+
 [3.3.1] - 2018-05-18
 --------------------
 
