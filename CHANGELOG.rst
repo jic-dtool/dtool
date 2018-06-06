@@ -30,6 +30,18 @@ Fixed
 Security
 ^^^^^^^^
 
+
+[3.5.0] - 2018-06-06
+--------------------
+
+Added
+^^^^^
+
+- Pre-checks to 'dtool freeze' command to ensure that there is no rogue content
+  in the base of disk datasets
+- Added rogue content validation check to DiskStorageBroker.pre_freeze hook
+
+
 [3.4.0] - 2018-05-24
 --------------------
 
