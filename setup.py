@@ -20,6 +20,7 @@ setup(
         "dtool-create==0.16.0",
         "dtool-info==0.10.1",
         "dtool-symlink==0.2.0",
+        "dtool-http==0.1.0",
     ],
     download_url="{}/tarball/{}".format(url, version),
     license="MIT"
