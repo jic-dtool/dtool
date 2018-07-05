@@ -10,8 +10,6 @@ This change log uses principles from `keep a changelog <http://keepachangelog.co
 Added
 ^^^^^
 
-- Bundling of ``dtool-http`` package
-
 
 Changed
 ^^^^^^^
@@ -24,9 +22,6 @@ Deprecated
 Removed
 ^^^^^^^
 
-- Bundling of ``dtool-irods`` package
-- Bundling of ``dtool-s3`` package
-
 
 Fixed
 ^^^^^
@@ -34,6 +29,21 @@ Fixed
 
 Security
 ^^^^^^^^
+
+
+[3.6.0] - 2018-07-05
+--------------------
+
+Added
+^^^^^
+
+- Bundling of ``dtool-http`` package
+
+Removed
+^^^^^^^
+
+- Bundling of ``dtool-irods`` package
+- Bundling of ``dtool-s3`` package
 
 
 [3.5.0] - 2018-06-06
