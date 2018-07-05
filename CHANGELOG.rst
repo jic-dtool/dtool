@@ -22,6 +22,9 @@ Deprecated
 Removed
 ^^^^^^^
 
+- Bundling of ``dtool-irods`` package
+- Bundling of ``dtool-s3`` package
+
 
 Fixed
 ^^^^^
