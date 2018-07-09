@@ -31,6 +31,16 @@ Security
 ^^^^^^^^
 
 
+[3.6.1] - 2018-07-09
+--------------------
+
+Fixed
+^^^^^
+
+- Made download to DTOOL_HTTP_CACHE_DIRECTORY more robust
+- Added ability to deal with redirects to enable working with shortened URLs
+
+
 [3.6.0] - 2018-07-05
 --------------------
 
