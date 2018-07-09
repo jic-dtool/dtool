@@ -5,6 +5,7 @@
 .coverage
 .eggs
 .tox
+.pytest_cache
 env
 build
 dist
