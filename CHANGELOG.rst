@@ -31,6 +31,15 @@ Security
 ^^^^^^^^
 
 
+[3.6.2] - 2018-07-10
+--------------------
+
+Fixed
+^^^^^
+
+- Default config file now set in ``dtoolcore.utils.get_config_value`` if not provided in caller 
+
+
 [3.6.1] - 2018-07-09
 --------------------
 
