@@ -31,6 +31,42 @@ Security
 ^^^^^^^^
 
 
+[3.7.0] - 2018-07-26
+--------------------
+
+Added
+^^^^^
+
+- Ability to update descriptive metadata in README of frozen datasets
+- Validation that the descriptive metadata provided by the
+  ``dtool readme edit`` command is valid YAML
+- Added ``dtoolcore.storagebroker.BaseStorageBroker``
+- Added logging to the reusable ``BaseStorageBroker`` methods
+- ``get_text`` new method on ``BaseStorageBroker`` class
+- ``put_text`` new method on ``BaseStorageBroker`` class
+- ``get_admin_metadata_key`` new method on ``BaseStorageBroker`` class
+- ``get_readme_key`` new method on ``BaseStorageBroker`` class
+- ``get_manifest_key`` new method on ``BaseStorageBroker`` class
+- ``get_overlay_key`` new method on ``BaseStorageBroker`` class
+- ``get_structure_key`` new method on ``BaseStorageBroker`` class
+- ``get_dtool_readme_key`` new method on ``BaseStorageBroker`` class
+- ``get_size_in_bytes`` new method on ``BaseStorageBroker`` class
+- ``get_utc_timestamp`` new method on ``BaseStorageBroker`` class
+- ``get_hash`` new method on ``BaseStorageBroker`` class
+- ``get_relpath`` new method on ``BaseStorageBroker`` class
+- ``update_readme`` new method on ``BaseStorageBroker`` class
+- ``DataSet.put_readme`` method that can be used to update descriptive metadata
+   in (frozen) dataset README whilst keeping a copy of the historical README
+   content
+- Add ``storage_broker_version`` key to structure parameters
+
+Fixed
+^^^^^
+
+- Stop ``copy_resume`` function calculating hashes unnecessarily
+- Fixed the documentation of the ``dtool verify`` command
+
+
 [3.6.2] - 2018-07-10
 --------------------
 
