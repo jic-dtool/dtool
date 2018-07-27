@@ -89,22 +89,20 @@ One can then convert the proto dataset into a dataset by "freezing" it.
     $ dtool freeze bgi-sequencing-12345
 
 It is now time to copy the dataset to the remote storage. The command below
-assumes that one has a working `iRODS <https://irods.org/>`_ server with a zone
-named ``/data_raw`` and the `iCommands <https://irods.org/download/>`_
-installed on the local machine. The command copies the local dataset to the
-iRODS ``/data_raw`` zone.
+assumes that one has credentials setup to write to the Amazon S3 bucket
+``dtool-demo``. The command copies the local dataset to the S3 ``dtool-demo``
+bucket.
 
 .. code-block:: none
 
-    $ dtool copy bgi-sequencing-12345 irods:/data_raw
+    $ dtool copy bgi-sequencing-12345 s3://dtool-demo/
 
 The command above returns feedback on the URI used to identify the dataset in
 the remote storage. In this case
-``irods:/data_raw/1e47c076-2eb0-43b2-b219-fc7d419f1f16``.
+``s3://dtool-demo/1e47c076-2eb0-43b2-b219-fc7d419f1f16``.
 
-The URI used to identify the dataset in iRODS uses the UUID of the dataset
-rather than the dataset's name. This is to avoid name clashes in the iRODS zone
-that may be used by more than one person.
+The URI used to identify the dataset uses the UUID of the dataset rather than
+the dataset's name. This is to avoid name clashes in the object storage.
 
 Finally, one may want to confirm that the data transfer was successful. This
 can be achieved using the ``dtool diff`` command, which should show no
@@ -112,7 +110,7 @@ differences if the transfer was successful.
 
 .. code-block:: none
 
-    $ dtool diff bgi-sequencing-12345 irods:/data_raw/1e47c076-2eb0-43b2-b219-fc7d419f1f16
+    $ dtool diff bgi-sequencing-12345 s3://dtool-demo/1e47c076-2eb0-43b2-b219-fc7d419f1f16
 
 By default only identifiers and file sizes are compared. To check file hashes
 make use of the ``--full`` option.
@@ -120,7 +118,7 @@ make use of the ``--full`` option.
 .. warning:: When comparing datasets identifiers, sizes and hashes are
              compared. When checking that the hashes are identical the hashes
              for the first dataset are recalculated using the hashing algorithm
-             of the reference dataset (the second). If the dataset in iRODS had
+             of the reference dataset (the second). If the dataset in S3 had
              been specified as the first argument then all the files would have
              had to have been downloaded to the local disk before calculating
              their hashes, which would have made the command slower. 
@@ -138,7 +136,7 @@ the dataset in iRODS to the current working directory.
 
 .. code-block:: none
 
-    $ dtool copy irods:/data_raw/2e47c076-2eb0-43b2-b219-fc7d419f1f16 ./
+    $ dtool copy s3://dtool-demo/1e47c076-2eb0-43b2-b219-fc7d419f1f16 ./
 
 Note that on the local disk the dataset will use the name of the dataset rather
 than the UUID, in this example ``bgi-sequencing-12345``.
@@ -147,4 +145,4 @@ Again one can verify the data transfer using the ``dtool diff`` command.
 
 .. code-block:: none
 
-    $ dtool diff bgi-sequencing-12345 irods:/data_raw/1e47c076-2eb0-43b2-b219-fc7d419f1f16
+    $ dtool diff bgi-sequencing-12345 s3://dtool-demo/1e47c076-2eb0-43b2-b219-fc7d419f1f16
