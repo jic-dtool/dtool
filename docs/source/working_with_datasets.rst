@@ -19,9 +19,9 @@ using the ``dtool ls`` command.
 
 .. tip:: The ``dtool ls`` command takes a URI. As such it can be used to list
          the datasets in remote storage locations. The example below lists all
-         the datasets in an iRODS zone named ``data_raw``::
+         the datasets in the S3 bucket named ``dtool-demo``::
 
-            $ dtool ls irods:/data_raw
+            $ dtool ls s3://dtool-demo/
 
 
 Generating an inventory of datasets
@@ -163,13 +163,13 @@ Below is an example of this command being used on a local disk file storage.
     $ dtool item fetch ~/my_datasets/drone-images 58f50508c42a56919376132e36b693e9815dbd0c
     /Users/olssont/my_datasets/drone-images/data/IMG_8585.JPG
 
-Below is an example of this command being used on a dataset in an iRODS zone
-called ``data_raw``.
+Below is an example of this command being used on a dataset in the S3 bucket
+``dtool-demo``.
 
 .. code-block:: none
 
-    $ dtool item fetch irods:/data_raw/1e47c076-2eb0-43b2-b219-fc7d419f1f16 3dce23b901709a24cfbb974b70c1ef132af10a67
-    /Users/olssont/.cache/dtool/irods/1e47c076-2eb0-43b2-b219-fc7d419f1f16/3dce23b901709a24cfbb974b70c1ef132af10a67.txt
+    $ dtool item fetch s3://dtool-demo/1e47c076-2eb0-43b2-b219-fc7d419f1f16 3dce23b901709a24cfbb974b70c1ef132af10a67
+    /Users/olssont/.cache/dtool/s3/1e47c076-2eb0-43b2-b219-fc7d419f1f16/3dce23b901709a24cfbb974b70c1ef132af10a67.txt
 
 
 Processing all the items in a dataset
