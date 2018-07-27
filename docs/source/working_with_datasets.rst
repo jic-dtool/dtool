@@ -10,10 +10,14 @@ using the ``dtool ls`` command.
 .. code-block:: none
 
     $ dtool ls ~/my_datasets
-    469ca967-4239-4eb8-880b-4741a882b2c4 - bgi-sequencing-12345 - file:///Users/olssont/my_datasets/bgi-sequencing-12345
-    c2542c2b-d149-4f73-84bc-741bf9af918f - drone-images         - file:///Users/olssont/my_datasets/drone-images
-    f416ded6-2f9a-4909-ab43-2447d0d1a0d4 - fishers-iris-data    - file:///Users/olssont/my_datasets/fishers-iris-data
-    6847e637-a61c-4043-a9e2-bbf4ff6f6baa - my_rnaseq_data       - file:///Users/olssont/my_datasets/my_rnaseq_data
+    bgi-sequencing-12345
+      file:///Users/olssont/my_datasets/bgi-sequencing-12345
+    drone-images
+      file:///Users/olssont/my_datasets/drone-images
+    fishers-iris-data
+      file:///Users/olssont/my_datasets/fishers-iris-data
+    my_rnaseq_data
+      file:///Users/olssont/my_datasets/my_rnaseq_data
 
 .. tip:: When using this command proto datasets are highlighted in red.
 
