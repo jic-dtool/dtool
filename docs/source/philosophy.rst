@@ -77,5 +77,6 @@ This happens in stages:
 3. One converts the proto dataset into a dataset by "freezing" it
 
 Once a proto dataset is "frozen" it is simply referred to as a dataset and it
-is no longer possible to modify it. In other words it is not possible to add or
-remove items from a dataset or to alter any of the items in a dataset.
+is no longer possible to modify the data in it. In other words it is not
+possible to add or remove items from a dataset or to alter any of the items in
+a dataset.
