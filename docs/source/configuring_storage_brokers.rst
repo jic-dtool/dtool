@@ -18,7 +18,7 @@ variables in the file ``~/.config/dtool/dtool.json``. For example,
 .. code-block:: json
 
     {
-       "DTOOL_IRODS_CACHE_DIRECTORY": "/tmp/dtool/irods"
+       "DTOOL_IRODS_CACHE_DIRECTORY": "/tmp/dtool/irods",
        "DTOOL_S3_CACHE_DIRECTORY": "/tmp/dtool/s3"
     }
 
