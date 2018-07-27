@@ -37,7 +37,7 @@ Install the ``dtool-azure`` package using ``pip``.
 
 .. code-block:: none
 
-    $ pip install dtooazures3
+    $ pip install dtool-azure
 
 To configure Microsoft Azure credentials see the README file in the
 `dtool-azure <https://github.com/jic-dtool/dtool-azure>`_ GitHub repository.
