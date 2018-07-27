@@ -43,24 +43,34 @@ The ``dtool`` Python package is a meta package that installs the packages:
 - `dtool-create <https://github.com/jic-dtool/dtool-create>`_ - CLI commands for creating datasets
 - `dtool-info <https://github.com/jic-dtool/dtool-info>`_ - CLI commands for getting information about datasets
 - `dtool-symlink <https://github.com/jic-dtool/dtool-symlink>`_ - storage broker interface allowing symlinking to data
-- `dtool-s3 <https://github.com/jic-dtool/dtool-s3>`_ - storage broker interface t S3 object storage
-- `dtool-irods <https://github.com/jic-dtool/dtool-irods>`_ - storage broker interface to iRODS
+- `dtool-http <https://github.com/jic-dtool/dtool-symlink>`_ - storage broker interface allowing read only access to datasets over HTTP
+
 
 Installation::
 
     $ pip install -U pip setuptools wheel
     $ pip install dtool
 
+There are support packages for several object storage solutions:
+
+- `dtool-s3 <https://github.com/jic-dtool/dtool-s3>`_ - storage broker interface to S3 object storage
+- `dtool-azure <https://github.com/jic-dtool/dtool-azure>`_ - storage broker interface to Azure Storage
+- `dtool-irods <https://github.com/jic-dtool/dtool-irods>`_ - storage broker interface to iRODS
+
+If you have access to Amazon S3, Microsoft Azure or iRODS storage you may also want to install support for these::
+
+    $ pip install dtool-s3 dtool-azure dtool-irods
+
 Usage::
 
     $ dtool create my-awesome-dataset
     Created proto dataset file:///Users/olssont/my-awesome-dataset
     Next steps:
-    1. Add descriptive metadata, e.g:
-       dtool readme interactive file:///Users/olssont/my-awesome-dataset
-    2. Add raw data, eg:
+    1. Add raw data, eg:
        dtool add item my_file.txt file:///Users/olssont/my-awesome-dataset
        Or use your system commands, e.g:
        mv my_data_directory /Users/olssont/my-awesome-dataset/data/
+    2. Add descriptive metadata, e.g:
+       dtool readme interactive file:///Users/olssont/my-awesome-dataset
     3. Convert the proto dataset into a dataset:
        dtool freeze file:///Users/olssont/my-awesome-dataset
