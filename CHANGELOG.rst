@@ -31,8 +31,33 @@ Security
 ^^^^^^^^
 
 
+[3.8.0] - 2018-07-31
+--------------------
+
+Dataset name validation.
+
+Added
+^^^^^
+
+- ``dtoolcore.generate_admin_metadata`` function raises
+  ``dtoolcore.DtoolCoreInvalidNameError`` if invalid name is provided
+- ``dtoolcore.utils.name_is_valid`` utility function for checking sanity of
+  dataset names
+- Validation of dataset name upon creation using dtool CLI
+- Validation of dataset name when updating it using dtool CLI
+
+Fixed
+^^^^^
+
+- Fixed defect where ``dtool ls -q`` was listing dataset names rather than URIs
+  making it impossible to process datasets in a BASE_URI programatically
+- Make ``SymlinkStorageBroker`` compatible with dtoolcore 3.4.0
+
+
 [3.7.0] - 2018-07-26
 --------------------
+
+Storage broker base class redesign and refactoring.
 
 Added
 ^^^^^
