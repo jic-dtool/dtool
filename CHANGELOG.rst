@@ -31,6 +31,17 @@ Security
 ^^^^^^^^
 
 
+[3.9.0] - 2018-08-03
+--------------------
+
+Added
+^^^^^
+
+- Added ability to update the name of a frozen dataset from the ``dtool`` CLI
+- Added ``update_name`` method to ``DataSet`` class (previously only available
+  on ``ProtoDataSet`` class)
+
+
 [3.8.0] - 2018-07-31
 --------------------
 
