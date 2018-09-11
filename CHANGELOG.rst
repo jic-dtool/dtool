@@ -31,6 +31,29 @@ Security
 ^^^^^^^^
 
 
+[3.10.0] - 2018-08-03
+--------------------
+
+Added
+^^^^^
+
+- ``dtoolcore.filehasher.hashsum_digest`` helper function
+- ``dtoolcore.filehasher.md5sum_digest`` helper function
+
+
+Changed
+^^^^^^^
+
+- Improved name from ``dtoolcore.filehasher.hashsum`` to
+  ``dtoolcore.filehasher.hashsum_hexdigest``
+
+Fixed
+^^^^^
+
+- Deal with issue in how ruamel.yaml deals with float values
+
+
+
 [3.9.0] - 2018-08-03
 --------------------
 
