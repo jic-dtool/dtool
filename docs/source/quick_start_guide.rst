@@ -95,7 +95,7 @@ bucket.
 
 .. code-block:: none
 
-    $ dtool copy bgi-sequencing-12345 s3://dtool-demo/
+    $ dtool cp bgi-sequencing-12345 s3://dtool-demo/
 
 The command above returns feedback on the URI used to identify the dataset in
 the remote storage. In this case
@@ -131,12 +131,12 @@ After having copied a dataset to a remote storage system one may have deleted
 the copy on the local disk. In this case one may want to be able to get the
 dataset back onto the local disk.
 
-This can be achieved using the ``dtool copy`` command. The command below copies
+This can be achieved using the ``dtool cp`` command. The command below copies
 the dataset in iRODS to the current working directory.
 
 .. code-block:: none
 
-    $ dtool copy s3://dtool-demo/1e47c076-2eb0-43b2-b219-fc7d419f1f16 ./
+    $ dtool cp s3://dtool-demo/1e47c076-2eb0-43b2-b219-fc7d419f1f16 ./
 
 Note that on the local disk the dataset will use the name of the dataset rather
 than the UUID, in this example ``bgi-sequencing-12345``.
