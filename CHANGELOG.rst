@@ -31,6 +31,38 @@ Security
 ^^^^^^^^
 
 
+[3.11.0] - 2018-09-20
+---------------------
+
+Added
+^^^^^
+
+- ``dtool cp`` to replace ``dtool copy``
+- ``dtool readme write`` to write readme from file or stdin
+- ``dtool item overlay`` command
+
+
+Deprecated
+^^^^^^^^^^
+
+- ``dtool copy`` in favour of ``dtool cp``
+
+
+Removed
+^^^^^^^
+
+- Removed ``created_at`` field from default README template
+
+
+Fixed
+^^^^^
+
+- Defect in ``dtool create`` when providing a relative path to the
+  ``--symlink-path`` option
+- Python 2 defect in dealing with unicode in README.yml file when using
+  ``dtool readme edit``
+
+
 [3.10.0] - 2018-09-11
 ---------------------
 

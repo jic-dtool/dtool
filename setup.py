@@ -17,8 +17,8 @@ setup(
     install_requires=[
         "dtoolcore==3.7.0",
         "dtool-cli==0.7.0",
-        "dtool-create==0.20.0",
-        "dtool-info==0.10.3",
+        "dtool-create==0.21.0",
+        "dtool-info==0.11.0",
         "dtool-symlink==0.3.0",
         "dtool-http==0.2.0",
     ],
