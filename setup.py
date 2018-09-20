@@ -1,14 +1,14 @@
 from setuptools import setup
 
 url = "https://github.com/jic-dtool/dtool"
-version = "3.10.0"
+version = "3.11.0"
 readme = open('README.rst').read()
 
 setup(
     name="dtool",
     packages=["dtool"],
     version=version,
-    description="Package files and metadata into self contained datasets",
+    description="Dtool command line client for managing data",
     long_description=readme,
     include_package_data=True,
     author="Tjelvar Olsson",
