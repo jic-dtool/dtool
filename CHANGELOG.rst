@@ -31,6 +31,16 @@ Security
 ^^^^^^^^
 
 
+[3.12.0] - 2018-09-25
+---------------------
+
+Added
+^^^^^
+
+- Added ``dtool uuid`` command
+- Added ``dtool item relpath`` command
+
+
 [3.11.0] - 2018-09-20
 ---------------------
 
