@@ -31,6 +31,18 @@ Security
 ^^^^^^^^
 
 
+[3.13.0] - 2018-11-13
+---------------------
+
+Added
+^^^^^
+
+- Added support for Windows!   :)
+- Added ``dtool config`` command
+
+
+
+
 [3.12.0] - 2018-09-25
 ---------------------
 
