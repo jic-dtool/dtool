@@ -2,27 +2,33 @@ Configuring storage brokers
 ===========================
 
 Some remote storage brokers require extra configuration, for example to enable
-authentication. Remote storage brokers may also provide a means to alter the
-local cache directory where files are fetched to, e.g. using the ``dtool item
-fetch`` command.
+authentication.
 
-One can provide these configurations by exporting relevant environment variables.
+
+The command below configures access to a Azure storage container named ``jicinformatics``::
+
+    $ dtool config azure get jicinformatics the-secret-token
+    the-secret-token
+
+
+Remote storage brokers may also provide a means to alter the local cache
+directory where files are fetched to, e.g. using the ``dtool item fetch``
+command. The command below sets the local cache directory for all storage brokers to ``/tmp/dtool``.
+
+    $ mkdir /tmp/dtool
+    $ dtool config cache set_all /tmp/dtool
+    azure     /tmp/dtool
+    http      /tmp/dtool
+    s3        /tmp/dtool
+    ecs       /tmp/dtool
+    irods     /tmp/dtool
+
+
+One can override these configurations by exporting relevant environment variables.
+
 For example::
 
+    $ export DTOOL_AZURE_CACHE_DIRECTORY=/tmp/dtool/azure 
     $ export DTOOL_IRODS_CACHE_DIRECTORY=/tmp/dtool/irods 
     $ export DTOOL_S3_CACHE_DIRECTORY=/tmp/dtool/s3 
-
-Alternatively, if using the ``dtool`` command line interface one can set these
-variables in the file ``~/.config/dtool/dtool.json``. For example,
-
-.. code-block:: json
-
-    {
-       "DTOOL_IRODS_CACHE_DIRECTORY": "/tmp/dtool/irods",
-       "DTOOL_S3_CACHE_DIRECTORY": "/tmp/dtool/s3"
-    }
-
-One may need to create this file if it does not already exist.
-
-See the documentation of specific storage brokers to find out what configuration
-options are available.
+    $ export DTOOL_ECS_CACHE_DIRECTORY=/tmp/dtool/ecs 
