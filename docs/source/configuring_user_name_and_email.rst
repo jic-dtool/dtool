@@ -16,13 +16,16 @@ address are ``Your Name`` and ``you@example.com``.
     username [olssont]:
     creation_date [2017-12-14]:
 
-These defaults can be configured by setting the ``DTOOL_USER_FULL_NAME``
-``DTOOL_USER_EMAIL`` environment variables.
+These defaults can be configuring the user name and email address.
 
 ::
 
-    $ export DTOOL_USER_FULL_NAME="Care A. Bout-Data"
-    $ export DTOOL_USER_EMAIL=researcher@famous.uni.ac.uk
+    $ dtool config user name "Care A. Bout-Data"
+    Care A. Bout-Data
+    $ dtool config user email researcher@famous.uni.ac.uk
+    researcher@famous.uni.ac.uk
+
+    
 
 Rerunning the previous ``dtool readme interactive`` command now gives updated
 defaults when prompting for input.
@@ -38,20 +41,3 @@ defaults when prompting for input.
     email [researcher@famous.uni.ac.uk]:
     username [olssont]:
     creation_date [2017-12-14]:
-
-It may therefore be useful to add the export commands above to ones ``.bashrc``
-file.
-
-Alternatively, one can add the ``DTOOL_USER_FULL_NAME`` and
-``DTOOL_USER_EMAIL`` keys to the ``~/.config/dtool/dtool.json`` file.  For
-example,
-
-.. code-block:: json
-
-    {
-       "DTOOL_USER_FULL_NAME": "Care A. Bout-Data",
-       "DTOOL_USER_EMAIL": "researcher@famous.uni.ac.uk"
-    }
-
-If the ``~/.config/dtool/dtool.json`` file does not exist one may need to
-create it.
