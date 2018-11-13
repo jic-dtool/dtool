@@ -43,6 +43,18 @@ To configure Microsoft Azure credentials see the README file in the
 `dtool-azure <https://github.com/jic-dtool/dtool-azure>`_ GitHub repository.
 
 
+Adding support for ECS S3 object storage
+----------------------------------------
+
+Install the ``dtool-ecs`` package using ``pip``.
+
+.. code-block:: none
+
+    $ pip install dtool-ecs
+
+To configure ECS S3 object storage credentials see the README file in the
+`dtool-ecs <https://github.com/jic-dtool/dtool-ecs>`_ GitHub repository.
+
 
 Adding support for iRODS storage
 --------------------------------
