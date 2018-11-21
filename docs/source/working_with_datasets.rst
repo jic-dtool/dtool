@@ -96,13 +96,13 @@ total size is. This can be achieved using the ``dtool summary`` command.
 .. code-block:: none
 
     $ dtool summary ~/my_datasets/drone-images
-    {
-      "name": "drone-images",
-      "uuid": "c2542c2b-d149-4f73-84bc-741bf9af918f",
-      "creator_username": "olssont",
-      "number_of_items": 59,
-      "size_in_bytes": 159915554
-    }
+    name: drone-images
+    uuid: c2542c2b-d149-4f73-84bc-741bf9af918f
+    creator_username: hartleym
+    number_of_items: 59
+    size: 152.5MiB
+    frozen_at: 2017-09-19
+
 
 
 Listing the item identifiers in a dataset

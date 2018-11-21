@@ -55,11 +55,12 @@ There are support packages for several object storage solutions:
 
 - `dtool-s3 <https://github.com/jic-dtool/dtool-s3>`_ - storage broker interface to S3 object storage
 - `dtool-azure <https://github.com/jic-dtool/dtool-azure>`_ - storage broker interface to Azure Storage
+- `dtool-ecs <https://github.com/jic-dtool/dtool-ecs>`_ - storage broker interface to ECS S3 object storage
 - `dtool-irods <https://github.com/jic-dtool/dtool-irods>`_ - storage broker interface to iRODS
 
-If you have access to Amazon S3, Microsoft Azure or iRODS storage you may also want to install support for these::
+If you have access to Amazon S3, Microsoft Azure, ECS S3 or iRODS storage you may also want to install support for these::
 
-    $ pip install dtool-s3 dtool-azure dtool-irods
+    $ pip install dtool-s3 dtool-azure dtool-ecs dtool-irods
 
 Usage::
 

@@ -15,6 +15,7 @@ files & metadata into self contained datasets.
    configuring_user_name_and_email
    configuring_a_custom_readme_template
    configuring_storage_brokers
+   publishing_a_dataset
    python_api
    creating_plugins
    CHANGELOG
