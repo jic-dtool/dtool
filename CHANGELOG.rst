@@ -31,6 +31,24 @@ Security
 ^^^^^^^^
 
 
+[3.14.0] - 2018-11-21
+---------------------
+
+Added
+^^^^^
+
+- Added ``dtool publish`` command
+- Added ``-f/--format`` option to ``dtool summary`` command to enable output in
+  JSON format
+- Added sorting of CSV/TSV/HTML inventories by dataset name
+
+
+Changed
+^^^^^^^
+
+- Changed default output of ``dtool summary`` to be human readable YAML
+
+
 [3.13.0] - 2018-11-13
 ---------------------
 
