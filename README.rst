@@ -1,4 +1,4 @@
-Dtool: Manage Scientific Data
+dtool: Manage Scientific Data
 =============================
 
 .. image:: https://badge.fury.io/py/dtool.svg
@@ -13,12 +13,13 @@ Dtool: Manage Scientific Data
 files & metadata into self contained datasets.*
 
 - Documentation: http://dtool.readthedocs.io
+- Paper: https://doi.org/10.7717/peerj.6562
 - Free software: MIT License
 
 Overview
 --------
 
-Dtool is a suite of software for managing scientific data and making it
+dtool is a suite of software for managing scientific data and making it
 accessible programatically. It consists of a command line interface ``dtool``
 and a Python API: `dtoolcore <https://github.com/jic-dtool/dtoolcore>`_.
 
@@ -32,7 +33,7 @@ makes it easy to create scripts for processing the items, or a subset of items,
 in a dataset. The Python API also allows datasets to be constructed
 programatically.
 
-Dtool is extensible, meaning that it is possible to create plugins both for
+dtool is extensible, meaning that it is possible to create plugins both for
 adding functionality to the command line interface and for creating interfaces
 to custom storage backends.
 
