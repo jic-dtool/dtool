@@ -57,7 +57,14 @@ could create the file ``~/custom_dtool_readme.yml`` with the content below.
         username: {username}
     creation_date: {date}
 
-To enable this template one can make use of the ``DTOOL_README_TEMPLATE_FPATH`` environment variable::
+To configure the dtool to make use of this template one can use the ``dtool config readme-template`` command::
+
+    $ dtool config readme-template ~/custom_dtool_readme.yml
+
+The ``dtool config readme-template`` command sets the
+``DTOOL_README_TEMPLATE_FPATH`` key in the ``~/.config/dtool/dtool.json`` file.
+Alternatively one can make use of the ``DTOOL_README_TEMPLATE_FPATH``
+environment variable::
 
     $ export DTOOL_README_TEMPLATE_FPATH=~/custom_dtool_readme.yml
 
@@ -74,14 +81,4 @@ Re-running the previous ``dtool readme interacitve`` command now includes a prom
     username [olssont]:
     creation_date [2017-12-14]:
 
-Alternatively, one can add the ``DTOOL_README_TEMPLATE_FPATH`` key to the
-``~/.config/dtool/dtool.json`` file.  For example,
 
-.. code-block:: json
-
-    {
-       "DTOOL_README_TEMPLATE_FPATH": "/Users/olssont/custom_dtool_readme.yml"
-    }
-
-If the ``~/.config/dtool/dtool.json`` file does not exist one may need to
-create it.
