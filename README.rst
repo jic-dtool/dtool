@@ -41,6 +41,7 @@ The ``dtool`` Python package is a meta package that installs the packages:
 
 - `dtoolcore <https://github.com/jic-dtool/dtoolcore>`_ - core API
 - `dtool-cli <https://github.com/jic-dtool/dtool-cli>`_ - CLI plugin scaffold
+- `dtool-config <https://github.com/jic-dtool/dtool-config>`_ - CLI commands for configuring dtool
 - `dtool-create <https://github.com/jic-dtool/dtool-create>`_ - CLI commands for creating datasets
 - `dtool-info <https://github.com/jic-dtool/dtool-info>`_ - CLI commands for getting information about datasets
 - `dtool-symlink <https://github.com/jic-dtool/dtool-symlink>`_ - storage broker interface allowing symlinking to data
@@ -49,7 +50,6 @@ The ``dtool`` Python package is a meta package that installs the packages:
 
 Installation::
 
-    $ pip install -U pip setuptools wheel
     $ pip install dtool
 
 There are support packages for several object storage solutions:
