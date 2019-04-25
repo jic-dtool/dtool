@@ -153,7 +153,7 @@ When all files are on local disk getting access to them is trivial.  However,
 when files are located in some object storage system in the cloud, access may
 be less trivial.
 
-Dtool solves this problem by providing a call to a method that returns an
+dtool solves this problem by providing a call to a method that returns an
 absolute path on local disk with a promise that the file requested will be
 available from there when the call returns the path.
 

@@ -39,7 +39,7 @@ interactive``, which will prompt for input regarding the dataset.
 
     $ dtool readme interactive fishers-iris-data
     description [Dataset description]: Fisher's classic iris data, but with an empty file :(
-    project [Project name]: Dtool demo
+    project [Project name]: dtool demo
     confidential [False]:
     personally_identifiable_information [False]:
     name [Your Name]: Tjelvar Olsson

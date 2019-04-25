@@ -9,7 +9,7 @@ will require that certain sets of files are present, understanding it requires
 suitable metadata, and copying or moving it while keeping its integrity is
 difficult.
 
-Dtool solves this problem by packaging a collection of files and accompanying
+dtool solves this problem by packaging a collection of files and accompanying
 metadata into a self contained and unified whole: a dataset.
 
 Having metadata separate from the data, for example in an Excel spread sheet
@@ -19,7 +19,7 @@ encapsulating both the data files and associated metadata in a dataset one is
 free to move the dataset around at will. The high level organisation of
 datasets can therefore evolve over time as data management processes change.
 
-Dtool also solves an issue of trust. By including file hashes as metadata
+dtool also solves an issue of trust. By including file hashes as metadata
 it is possible to verify the integrity of a dataset after it has been moved to
 a new location or when coming back to a dataset after a period of time.
 

@@ -1,4 +1,4 @@
-Dtool: Manage Scientific Data
+dtool: Manage Scientific Data
 =============================
 
 Make your data more resilient, portable and easy to work with by packaging

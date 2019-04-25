@@ -1,7 +1,7 @@
 Installation notes
 ==================
 
-Dtool is a Python package that is pip installable.
+dtool is a Python package that is pip installable.
 
 Make sure that ``pip``, ``setputools`` and ``wheel`` are up to date.
 This is a requirement of one of the dependencies (``ruamel.yaml``).
@@ -10,7 +10,7 @@ This is a requirement of one of the dependencies (``ruamel.yaml``).
 
     $ pip install -U pip setuptools wheel
 
-Dtool can then be installed using ``pip``.
+dtool can then be installed using ``pip``.
 
 .. code-block:: none
 
