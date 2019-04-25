@@ -4,7 +4,7 @@ Working with datasets
 Listing datasets
 ----------------
 
-It is possible to list all datasets in a directory or in an iRODS zone 
+It is possible to list all datasets in a directory or in a S3 bucket
 using the ``dtool ls`` command.
 
 .. code-block:: none

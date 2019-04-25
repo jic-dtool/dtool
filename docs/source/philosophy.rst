@@ -66,6 +66,8 @@ stored. The items of the dataset are stored in the directory named ``data``.
 There is also hidden metadata, stored as plain text files, in a directory named
 ``.dtool``. This should not be edited directly by the user.
 
+.. image:: images/dataset_structure.png
+
 
 How does one create a dtool dataset?
 ------------------------------------
@@ -80,3 +82,16 @@ Once a proto dataset is "frozen" it is simply referred to as a dataset and it
 is no longer possible to modify the data in it. In other words it is not
 possible to add or remove items from a dataset or to alter any of the items in
 a dataset.
+
+The process can be likened to creating an open box (the proto dataset), putting
+items (data) into it, sticking a label (metadata) on it, and closing the box
+(freezing the dataset).
+
+.. image:: images/package_data_and_metadata_into_beautiful_box.png
+
+
+Give me more details!
+---------------------
+
+An in depth discussion of dtool can be found in the paper
+`Lightweight data management with dtool <https://peerj.com/articles/6562/>`_.

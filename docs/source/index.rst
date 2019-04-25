@@ -18,5 +18,6 @@ files & metadata into self contained datasets.
    publishing_a_dataset
    python_api
    creating_plugins
+   citing_dtool
    CHANGELOG
    LICENSE
