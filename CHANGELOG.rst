@@ -31,6 +31,37 @@ Security
 ^^^^^^^^
 
 
+[3.15.0] - 2019-04-26
+---------------------
+
+Added
+^^^^^
+
+- ``dtool config readme-template`` CLI command for configuring the path to a
+  custom readme template
+- ``dtoolcore._BaseDataSet.base_uri`` property
+- ``dtoolcore.storagebroker.BaseStorageBroker.generate_base_uri`` method
+- ``dtoolcore.utils.DEFAULT_CACHE_PATH`` global helper variable
+- ``dtoolcore.utils.get_config_value_from_file`` helper function
+- ``dtoolcore.utils.write_config_value_to_file`` helper function
+
+
+Changed
+^^^^^^^
+
+- ``dtool config cache`` now works with one unified cache directory for all
+  storage brokers
+- Started using unified environment variable to specify the cache directory
+  ``DTOOL_CACHE_DIRECTORY``
+- Default cache directory changed set to ``~/.cache/dtool``
+
+Fixed
+^^^^^
+
+- Fixed defect  when username was supplied as two separate strings to
+  ``dtool config user name`` in CLI
+
+
 [3.14.1] - 2018-12-12
 ---------------------
 
