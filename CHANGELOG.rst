@@ -31,6 +31,23 @@ Security
 ^^^^^^^^
 
 
+[3.16.0] - 2019-07-12
+---------------------
+
+Added
+^^^^^
+
+- Added more debug logging
+- Added ``dtool config ecs ls`` command to list ECS base URIs that have been
+- Added support for configuring access to ECS buckets in multiple namespaces
+
+Fixed
+^^^^^
+
+- The ``dtool config azure ls`` command now returns base URIs rather than
+  container names
+
+
 [3.15.0] - 2019-04-26
 ---------------------
 
