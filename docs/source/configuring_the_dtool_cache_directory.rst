@@ -11,6 +11,14 @@ You may want to configure this cache to be in a different location. This can be 
     $ mkdir /tmp/dtool
     $ dtool config cache /tmp/dtool
 
+It is also possible to override both the default and the configured cache
+directory by exporting the environment variable ``DTOOL_CACHE_DIRECTORY``.
+This can be useful when using local SSD on a compute cluster::
+
+
+    $ mkdir /local/ssd/dtool
+    $ export DTOOL_CACHE_DIRECTORY=/local/ssd/dtool
+
 
 .. warning:: There is no automatic mechanism built into dtool to clear up the
              cache. It can therefore grow very large if you are working with
