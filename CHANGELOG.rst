@@ -31,6 +31,18 @@ Security
 ^^^^^^^^
 
 
+[3.17.0] - 2019-08-06
+---------------------
+
+Added
+^^^^^
+
+- Added support for host name in file URI.
+- Added ``dtool status`` command for working out if a dataset is frozen or not
+- Added ``dtool uri`` command for expanding absolute and relative paths into
+  proper URIs
+
+
 [3.16.0] - 2019-07-12
 ---------------------
 
