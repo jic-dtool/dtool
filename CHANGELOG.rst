@@ -31,6 +31,26 @@ Security
 ^^^^^^^^
 
 
+[3.18.0] - 2019-09-06
+---------------------
+
+Added
+^^^^^
+
+- Added 'dtool overlays show' command
+- Added 'dtool overlays write' command
+- Added 'dtool overlays template parse' command
+- Added 'dtool overlays template glob' command
+- Added 'dtool overlays template pairs' command
+
+
+Deprecated
+^^^^^^^^^^
+
+- Deprecated 'dtool overlay ls'
+- Deprecated 'dtool overlay show'
+
+
 [3.17.0] - 2019-08-06
 ---------------------
 
