@@ -20,6 +20,22 @@ The dataset above has three overlays named: ``pair_id``, ``is_read1``, and
 ``useful_name``. The columns named ``identifiers`` and ``relpaths`` are
 reported for bookkeeping purposes.
 
+
+Accessing an overlay value of a specific dataset item
+------------------------------------------------------
+
+It is possible to get access to the value stored in an overlay for a specific
+item using the command ``dtool item overlay``.
+
+.. code-block:: none
+
+    $ dtool item overlay  \
+        is_read1  \
+        http://bit.ly/Ecoli-reads-minified  \
+        9760280dc6313d3bb598fa03c5931a7f037d7ffc
+    True
+
+
 Creating overlays
 -----------------
 
