@@ -31,6 +31,23 @@ Security
 ^^^^^^^^
 
 
+[3.19.0] - 2019-09-12
+---------------------
+
+Added
+^^^^^
+
+- Added sorting of items by relpath to 'dtool ls <DS_URI>'
+
+Fixed
+^^^^^
+
+- Fixed formatting of 'dtool ls <DS_URI>' from using two whitespaces to using
+  one tab to make it easier to work with command line tools such as ``cut``
+- Fixed ordering of lines in overlay CSV template from being sorted by the
+  identifier to being ordered by the relpath
+
+
 [3.18.0] - 2019-09-06
 ---------------------
 
