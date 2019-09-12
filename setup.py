@@ -18,11 +18,11 @@ setup(
         "dtoolcore==3.12.0",
         "dtool-cli==0.7.0",
         "dtool-create==0.22.0",
-        "dtool-info==0.15.0",
+        "dtool-info==0.16.0",
         "dtool-symlink==0.3.0",
         "dtool-http==0.3.0",
         "dtool-config==0.4.0",
-        "dtool-overlay==0.2.0",
+        "dtool-overlay==0.3.0",
     ],
     download_url="{}/tarball/{}".format(url, version),
     license="MIT"
