@@ -30,6 +30,28 @@ Fixed
 Security
 ^^^^^^^^
 
+[3.20.0] - 2019-10-31
+---------------------
+
+*New feature: Dataset annotation*
+
+Dataset annotations are intended to make it easy to add and access specific
+metadata at a per dataset level.
+
+The difference between annotations and the descriptive metadata is that the
+former is easier to work with in a programmatic fashion. The descriptive
+metadata, stored in the dataset's README content, is more free form. It is
+non-trivial to access specific pieces of information from the descriptive
+metadata in the dataset's README content, whereas a dtool annotation can be
+easily accessed by its name.
+
+Added
+^^^^^
+
+- Added ``dtool annotation set`` command
+- Added ``dtool annotation get`` command
+- Added ``dtool annotation ls`` command
+
 
 [3.19.0] - 2019-09-12
 ---------------------
