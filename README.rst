@@ -41,9 +41,11 @@ The ``dtool`` Python package is a meta package that installs the packages:
 
 - `dtoolcore <https://github.com/jic-dtool/dtoolcore>`_ - core API
 - `dtool-cli <https://github.com/jic-dtool/dtool-cli>`_ - CLI plugin scaffold
+- `dtool-annotation <https://github.com/jic-dtool/dtool-annotation>`_ - CLI commands for working with dataset annotations
 - `dtool-config <https://github.com/jic-dtool/dtool-config>`_ - CLI commands for configuring dtool
 - `dtool-create <https://github.com/jic-dtool/dtool-create>`_ - CLI commands for creating datasets
 - `dtool-info <https://github.com/jic-dtool/dtool-info>`_ - CLI commands for getting information about datasets
+- `dtool-overlay <https://github.com/jic-dtool/dtool-overlay>`_ - CLI commands for working with per item metadata stored as overlays
 - `dtool-symlink <https://github.com/jic-dtool/dtool-symlink>`_ - storage broker interface allowing symlinking to data
 - `dtool-http <https://github.com/jic-dtool/dtool-symlink>`_ - storage broker interface allowing read only access to datasets over HTTP
 
