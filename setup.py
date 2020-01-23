@@ -18,7 +18,7 @@ setup(
         "dtoolcore==3.14.0",
         "dtool-cli==0.7.0",
         "dtool-create==0.22.0",
-        "dtool-info==0.16.0",
+        "dtool-info==0.16.1",
         "dtool-symlink==0.3.0",
         "dtool-http==0.4.0",
         "dtool-config==0.4.0",
