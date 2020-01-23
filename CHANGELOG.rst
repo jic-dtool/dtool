@@ -31,6 +31,13 @@ Security
 ^^^^^^^^
 
 
+[3.21.1] - 2020-01-23
+---------------------
+
+- Fixed defect where 'dtool verify' calculated hashes even when the '-f/--full'
+  option was not specified. The 'dtool verify' command now runs more quickly.
+
+
 [3.21.0] - 2020-01-21
 ---------------------
 
