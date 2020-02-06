@@ -10,6 +10,11 @@ This change log uses principles from `keep a changelog <http://keepachangelog.co
 Added
 ^^^^^
 
+- dtoolcore.create_proto_dataset() helper function
+- dtoolcore.create_derived_proto_dataset() helper function
+- dtoolcore.DataSetCreator helper context manager class
+- dtoolcore.DerivedDataSetCreator helper context manager class
+
 
 Changed
 ^^^^^^^
@@ -25,6 +30,10 @@ Removed
 
 Fixed
 ^^^^^
+
+- Fixed defect where using ``DTOOL_NUM_PROCESSES`` > 1 resulted in
+  a cPickle.PicklingError on some storage brokers. Multiprocessing
+  is now only used if the storage broker supports it.
 
 
 Security
