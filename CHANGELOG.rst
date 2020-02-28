@@ -30,6 +30,21 @@ Fixed
 Security
 ^^^^^^^^
 
+[3.23.0] - 2020-02-28
+---------------------
+
+Added
+^^^^^
+
+- Add ``dtool readme validate`` command
+- Ability to update descriptive metadata in README of frozen datasets
+  when using ``dtool redme write``
+
+Fixed
+^^^^^
+
+- Fixed several defects in how URIs were parsed and generated on Windows.
+
 
 [3.22.0] - 2020-02-06
 ---------------------
