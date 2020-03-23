@@ -7,8 +7,24 @@ This change log uses principles from `keep a changelog <http://keepachangelog.co
 [Unreleased]
 ------------
 
+Added Python API support for tags.
+
 Added
 ^^^^^
+
+- Added ``dtoolcore._BaseDataSet.put_tag()`` method
+- Added ``dtoolcore._BaseDataSet.delete_tag()`` method
+- Added ``dtoolcore._BaseDataSet.list_tags()`` method
+- Added ``dtoolcore.storagebroker.BaseStorageBroker.delete_key()`` method
+- Added ``dtoolcore.storagebroker.BaseStorageBroker.get_tag_key()`` method
+- Added ``dtoolcore.storagebroker.BaseStorageBroker.list_tags()`` method
+- Added ``dtoolcore.storagebroker.BaseStorageBroker.put_tag()`` method
+- Added ``dtoolcore.storagebroker.BaseStorageBroker.delete_tag()`` method
+- Added ``dtoolcore.storagebroker.DiskStorageBroker.delete_key()`` method
+- Added ``dtoolcore.storagebroker.DiskStorageBroker.get_tag_key()`` method
+- Added ``dtoolcore.storagebroker.DiskStorageBroker.list_tags()`` method
+- Default cache directory changed from ``~/.cache/dtool/http`` to
+  ``~/.cache/dtool``
 
 
 Changed
@@ -25,6 +41,9 @@ Removed
 
 Fixed
 ^^^^^
+
+- Cache environment variable changed from DTOOL_HTTP_CACHE_DIRECTORY to
+  DTOOL_CACHE_DIRECTORY
 
 
 Security
