@@ -7,6 +7,33 @@ This change log uses principles from `keep a changelog <http://keepachangelog.co
 [Unreleased]
 ------------
 
+Added
+^^^^^
+
+
+Changed
+^^^^^^^
+
+
+Deprecated
+^^^^^^^^^^
+
+
+Removed
+^^^^^^^
+
+
+Fixed
+^^^^^
+
+
+Security
+^^^^^^^^
+
+
+[3.24.0] - 2020-03-23
+---------------------
+
 Added Python API support for tags.
 
 Added
@@ -26,28 +53,12 @@ Added
 - Default cache directory changed from ``~/.cache/dtool/http`` to
   ``~/.cache/dtool``
 
-
-Changed
-^^^^^^^
-
-
-Deprecated
-^^^^^^^^^^
-
-
-Removed
-^^^^^^^
-
-
 Fixed
 ^^^^^
 
 - Cache environment variable changed from DTOOL_HTTP_CACHE_DIRECTORY to
   DTOOL_CACHE_DIRECTORY
 
-
-Security
-^^^^^^^^
 
 [3.23.0] - 2020-02-28
 ---------------------
