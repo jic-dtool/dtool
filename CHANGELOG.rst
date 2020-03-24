@@ -31,6 +31,19 @@ Security
 ^^^^^^^^
 
 
+[3.25.0] - 2020-03-25
+---------------------
+
+Added support for tags from the dtool CLI.
+
+Added
+^^^^^
+
+- The CLI command 'dtool tag set'
+- The CLI command 'dtool tag ls'
+- The CLI command 'dtool tag delete'
+
+
 [3.24.0] - 2020-03-23
 ---------------------
 

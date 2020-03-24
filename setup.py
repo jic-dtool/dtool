@@ -24,6 +24,7 @@ setup(
         "dtool-config==0.4.0",
         "dtool-overlay==0.3.0",
         "dtool-annotation==0.1.0",
+        "dtool-tag==0.1.0",
     ],
     download_url="{}/tarball/{}".format(url, version),
     license="MIT"
