@@ -12,6 +12,7 @@ files & metadata into self contained datasets.
    philosophy
    quick_start_guide
    working_with_datasets
+   tagging_datasets
    annotating_datasets
    working_with_overlays
    configuring_user_name_and_email
