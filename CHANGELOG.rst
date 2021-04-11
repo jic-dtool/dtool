@@ -30,6 +30,30 @@ Fixed
 Security
 ^^^^^^^^
 
+[3.26.0] - 2021-04-11
+---------------------
+
+Added
+^^^^^
+
+- ``dtoolcore.iter_datasets_in_base_uri`` helper function
+- ``dtoolcore.iter_proto_datasets_in_base_uri`` helper function
+
+Fixed
+^^^^^
+
+- Fixed defect in ``dtool readme interactive`` command when the readme template contains a date.
+  Thanks to Lars Pastewka.
+- Fixed defect in "dtool readme interaction" when the default date of today is
+  not updated when using "{{ date }}" in the readme template. See
+  https://github.com/jic-dtool/dtool-create/issues/24
+  Thanks to Antoine Sanner.
+- Fixed issue where "dtool readme edit" opened file with ".txt" extension
+  rather than ".yml" extension. See:
+  https://github.com/jic-dtool/dtool-cli/issues/3
+  Thanks to Antoine Sanner.
+
+
 
 [3.25.0] - 2020-03-25
 ---------------------
