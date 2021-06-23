@@ -26,6 +26,8 @@ Removed
 Fixed
 ^^^^^
 
+- License files now included in releases thanks to Jan Janssen (https://github.com/jan-janssen)
+
 
 Security
 ^^^^^^^^
