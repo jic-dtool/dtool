@@ -26,11 +26,19 @@ Removed
 Fixed
 ^^^^^
 
-- License files now included in releases thanks to Jan Janssen (https://github.com/jan-janssen)
-
 
 Security
 ^^^^^^^^
+
+
+[3.26.1] - 2021-06-23
+---------------------
+
+Fixed
+^^^^^
+
+- License files now included in releases thanks to Jan Janssen (https://github.com/jan-janssen)
+
 
 [3.26.0] - 2021-04-11
 ---------------------
