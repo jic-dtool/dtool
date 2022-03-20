@@ -31,6 +31,24 @@ Security
 ^^^^^^^^
 
 
+[3.26.2] - 2022-02-20
+---------------------
+
+Fixed
+^^^^^
+
+- Fixed defect where "frozen_at" administrative metadata changed when a dataset
+  was being copied (in the destination dataset).
+  Many thanks to `Johannes L. Hörmann <https://github.com/jotelha>`_
+  and `Lars Pastewka <https://github.com/pastewka>`_ for bug reports,
+  design discussions and code contributions.
+  See:
+  https://github.com/jic-dtool/dtoolcore/issues/20
+- Improve handling of Windows paths with drive letters where the
+  dataset is located in a drive different to that of the working
+  directory, see https://github.com/jic-dtool/dtoolcore/pull/23
+
+
 [3.26.1] - 2021-06-23
 ---------------------
 
