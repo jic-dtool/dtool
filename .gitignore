@@ -9,3 +9,5 @@
 env
 build
 dist
+
+dtool/version.py
