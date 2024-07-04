@@ -30,6 +30,21 @@ Fixed
 Security
 ^^^^^^^^
 
+[3.27.0] - 2024-07-04
+---------------------
+
+Added
+^^^^^
+
+
+Changed
+^^^^^^^
+
+- Pinned ``dtoolcore`` version to 3.18.3, where copying tags has been fixed
+- Embedded dtool icon in ``README.rst``
+- Replaced ``setup.py`` with ``pyproject.toml``
+- Dynamic versioning from scm tag
+
 
 [3.26.2] - 2022-02-20
 ---------------------
@@ -39,7 +54,7 @@ Fixed
 
 - Fixed defect where "frozen_at" administrative metadata changed when a dataset
   was being copied (in the destination dataset).
-  Many thanks to `Johannes L. Hörmann <https://github.com/jotelha>`_
+  Many thanks to `Johannes L. HÃ¶rmann <https://github.com/jotelha>`_
   and `Lars Pastewka <https://github.com/pastewka>`_ for bug reports,
   design discussions and code contributions.
   See:
