@@ -1,13 +1,19 @@
 dtool: Manage Scientific Data
 =============================
 
-.. image:: https://badge.fury.io/py/dtool.svg
+.. |dtool| image:: https://github.com/jic-dtool/dtool/blob/master/icons/22x22/dtool_logo.png?raw=True
+    :height: 20px
+    :target: https://github.com/jic-dtool/dtool
+
+.. |pypi| image:: https://badge.fury.io/py/dtool.svg
    :target: http://badge.fury.io/py/dtool
    :alt: PyPi package
 
-.. image:: https://readthedocs.org/projects/dtool/badge/?version=latest
+.. |docs| image:: https://readthedocs.org/projects/dtool/badge/?version=latest
    :target: https://readthedocs.org/projects/dtool?badge=latest
    :alt: Documentation Status
+
+|dtool| |pypi| |docs|
 
 *Make your data more resilient, portable and easy to work with by packaging
 files & metadata into self contained datasets.*
@@ -57,6 +63,7 @@ Installation::
 There are support packages for several object storage solutions:
 
 - `dtool-s3 <https://github.com/jic-dtool/dtool-s3>`_ - storage broker interface to S3 object storage
+- `dtool-smb <https://github.com/livMatS/dtool-smb>`_ - storage broker interface to smb network share
 - `dtool-azure <https://github.com/jic-dtool/dtool-azure>`_ - storage broker interface to Azure Storage
 - `dtool-ecs <https://github.com/jic-dtool/dtool-ecs>`_ - storage broker interface to ECS S3 object storage
 - `dtool-irods <https://github.com/jic-dtool/dtool-irods>`_ - storage broker interface to iRODS
