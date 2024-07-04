@@ -1,13 +1,19 @@
 dtool: Manage Scientific Data
 =============================
 
-.. image:: https://badge.fury.io/py/dtool.svg
+.. |dtool| image:: https://github.com/jic-dtool/dtool/blob/master/icons/22x22/dtool_logo.png?raw=True
+    :height: 20px
+    :target: https://github.com/jic-dtool/dtool
+
+.. |pypi| image:: https://badge.fury.io/py/dtool.svg
    :target: http://badge.fury.io/py/dtool
    :alt: PyPi package
 
-.. image:: https://readthedocs.org/projects/dtool/badge/?version=latest
+.. |docs| image:: https://readthedocs.org/projects/dtool/badge/?version=latest
    :target: https://readthedocs.org/projects/dtool?badge=latest
    :alt: Documentation Status
+
+|dtool| |pypi| |docs|
 
 *Make your data more resilient, portable and easy to work with by packaging
 files & metadata into self contained datasets.*
@@ -20,7 +26,7 @@ Overview
 --------
 
 dtool is a suite of software for managing scientific data and making it
-accessible programatically. It consists of a command line interface ``dtool``
+accessible programmatically. It consists of a command line interface ``dtool``
 and a Python API: `dtoolcore <https://github.com/jic-dtool/dtoolcore>`_.
 
 The ``dtool`` command line interface allows one to organise files into datasets
@@ -31,7 +37,7 @@ verify that the transfer has been successful.
 The Python API gives complete access to the data and metadata in a dataset.  It
 makes it easy to create scripts for processing the items, or a subset of items,
 in a dataset. The Python API also allows datasets to be constructed
-programatically.
+programmatically.
 
 dtool is extensible, meaning that it is possible to create plugins both for
 adding functionality to the command line interface and for creating interfaces
@@ -57,6 +63,7 @@ Installation::
 There are support packages for several object storage solutions:
 
 - `dtool-s3 <https://github.com/jic-dtool/dtool-s3>`_ - storage broker interface to S3 object storage
+- `dtool-smb <https://github.com/livMatS/dtool-smb>`_ - storage broker interface to smb network share
 - `dtool-azure <https://github.com/jic-dtool/dtool-azure>`_ - storage broker interface to Azure Storage
 - `dtool-ecs <https://github.com/jic-dtool/dtool-ecs>`_ - storage broker interface to ECS S3 object storage
 - `dtool-irods <https://github.com/jic-dtool/dtool-irods>`_ - storage broker interface to iRODS
@@ -78,3 +85,4 @@ Usage::
        dtool readme interactive file:///Users/olssont/my-awesome-dataset
     3. Convert the proto dataset into a dataset:
        dtool freeze file:///Users/olssont/my-awesome-dataset
+
