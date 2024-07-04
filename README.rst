@@ -9,6 +9,9 @@ dtool: Manage Scientific Data
    :target: http://badge.fury.io/py/dtool
    :alt: PyPi package
 
+.. |test| image:: https://img.shields.io/github/actions/workflow/status/jic-dtool/dtool/test.yml?branch=master&label=tests
+    :target: https://github.com/jic-dtool/dtool/actions/workflows/test.yml
+
 .. |docs| image:: https://readthedocs.org/projects/dtool/badge/?version=latest
    :target: https://readthedocs.org/projects/dtool?badge=latest
    :alt: Documentation Status
