@@ -16,7 +16,7 @@ dtool: Manage Scientific Data
    :target: https://readthedocs.org/projects/dtool?badge=latest
    :alt: Documentation Status
 
-|dtool| |pypi| |docs|
+|dtool| |pypi| |test| |docs|
 
 *Make your data more resilient, portable and easy to work with by packaging
 files & metadata into self contained datasets.*
