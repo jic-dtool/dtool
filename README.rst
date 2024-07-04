@@ -26,7 +26,7 @@ Overview
 --------
 
 dtool is a suite of software for managing scientific data and making it
-accessible programatically. It consists of a command line interface ``dtool``
+accessible programmatically. It consists of a command line interface ``dtool``
 and a Python API: `dtoolcore <https://github.com/jic-dtool/dtoolcore>`_.
 
 The ``dtool`` command line interface allows one to organise files into datasets
@@ -37,7 +37,7 @@ verify that the transfer has been successful.
 The Python API gives complete access to the data and metadata in a dataset.  It
 makes it easy to create scripts for processing the items, or a subset of items,
 in a dataset. The Python API also allows datasets to be constructed
-programatically.
+programmatically.
 
 dtool is extensible, meaning that it is possible to create plugins both for
 adding functionality to the command line interface and for creating interfaces
@@ -85,3 +85,4 @@ Usage::
        dtool readme interactive file:///Users/olssont/my-awesome-dataset
     3. Convert the proto dataset into a dataset:
        dtool freeze file:///Users/olssont/my-awesome-dataset
+
