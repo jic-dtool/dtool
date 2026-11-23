@@ -14,6 +14,8 @@ Added
 Changed
 ^^^^^^^
 
+- Build system switched to hatchling with hatch-vcs; the version is now
+  derived from git tags
 
 Deprecated
 ^^^^^^^^^^
@@ -22,6 +24,7 @@ Deprecated
 Removed
 ^^^^^^^
 
+- Support for Python < 3.10
 
 Fixed
 ^^^^^

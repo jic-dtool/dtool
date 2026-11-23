@@ -1,16 +1,9 @@
 """dtool package."""
 
 import logging
+from importlib.metadata import version, PackageNotFoundError
 
 logger = logging.getLogger(__name__)
-
-# workaround for diverging python versions:
-try:
-    from importlib.metadata import version, PackageNotFoundError
-    logger.debug("imported version, PackageNotFoundError from importlib.metadata")
-except ModuleNotFoundError:
-    from importlib_metadata import version, PackageNotFoundError
-    logger.debug("imported version, PackageNotFoundError from importlib_metadata")
 
 # first, try to determine dynamic version at runtime
 try:

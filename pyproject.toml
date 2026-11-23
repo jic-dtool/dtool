@@ -1,15 +1,17 @@
 [build-system]
-requires = ["setuptools>=42", "setuptools_scm[toml]>=6.3"]
-build-backend = "setuptools.build_meta"
+requires = ["hatchling>=1.27", "hatch-vcs"]
+build-backend = "hatchling.build"
 
 [project]
 name = "dtool"
 description = "dtool command line client for managing data"
 readme = "README.rst"
-license = {file = "LICENSE"}
+license = "MIT"
+license-files = ["LICENSE.rst"]
 authors = [
     {name = "Tjelvar Olsson", email = "tjelvar.olsson@gmail.com"}
 ]
+requires-python = ">=3.10"
 dynamic = ["version"]
 dependencies = [
     "dtoolcore==3.19.0",
@@ -39,10 +41,14 @@ Documentation = "https://dtool.readthedocs.io"
 Repository = "https://github.com/jic-dtool/dtool"
 Changelog = "https://github.com/jic-dtool/dtool/blob/main/CHANGELOG.rst"
 
-[tool.setuptools_scm]
-version_scheme = "guess-next-dev"
-local_scheme = "no-local-version"
-write_to = "dtool/version.py"
+[tool.hatch.version]
+source = "vcs"
 
-[tool.setuptools]
+[tool.hatch.version.raw-options]
+local_scheme = "no-local-version"
+
+[tool.hatch.build.hooks.vcs]
+version-file = "dtool/version.py"
+
+[tool.hatch.build.targets.wheel]
 packages = ["dtool"]
