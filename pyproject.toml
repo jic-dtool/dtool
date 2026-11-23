@@ -17,7 +17,7 @@ dependencies = [
     "dtool-create==0.23.4",
     "dtool-info==0.16.2",
     "dtool-symlink==0.3.1",
-    "dtool-http==0.5.1",
+    "dtool-http==0.5.2",
     "dtool-config==0.4.1",
     "dtool-overlay==0.3.1",
     "dtool-annotation==0.1.1",
