@@ -11,6 +11,7 @@ authors = [
     {name = "Tjelvar Olsson", email = "tjelvar.olsson@gmail.com"}
 ]
 dynamic = ["version"]
+requires-python = ">=3.10"
 dependencies = [
     "dtoolcore==3.19.0",
     "dtool-cli==0.7.1",
