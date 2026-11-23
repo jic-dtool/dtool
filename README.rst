@@ -1,7 +1,7 @@
 dtool: Manage Scientific Data
 =============================
 
-.. |dtool| image:: https://github.com/jic-dtool/dtool/blob/master/icons/22x22/dtool_logo.png?raw=True
+.. |dtool| image:: https://github.com/jic-dtool/dtool/blob/main/icons/22x22/dtool_logo.png?raw=True
     :height: 20px
     :target: https://github.com/jic-dtool/dtool
 
@@ -9,7 +9,7 @@ dtool: Manage Scientific Data
    :target: http://badge.fury.io/py/dtool
    :alt: PyPi package
 
-.. |test| image:: https://img.shields.io/github/actions/workflow/status/jic-dtool/dtool/test.yml?branch=master&label=tests
+.. |test| image:: https://img.shields.io/github/actions/workflow/status/jic-dtool/dtool/test.yml?branch=main&label=tests
     :target: https://github.com/jic-dtool/dtool/actions/workflows/test.yml
 
 .. |docs| image:: https://readthedocs.org/projects/dtool/badge/?version=latest
