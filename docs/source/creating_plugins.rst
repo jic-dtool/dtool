@@ -26,7 +26,7 @@ Creating an interface to a new type of storage
 
 Below are the steps required to create a storage broker for allowing ``dtool``
 to interact with a new backend. A concrete example making use of this plugin
-system is `dtool-irods <https://github.com/jic-dtool/dtool-info>`_.
+system is `dtool-irods <https://github.com/jic-dtool/dtool-irods>`_.
 
 1. Examine the code in ``dtoolcore.storagebroker.DiskStorageBroker``.
 2. Create a Python class for your storage, e.g. ``MyStorageBroker``
@@ -36,12 +36,9 @@ system is `dtool-irods <https://github.com/jic-dtool/dtool-info>`_.
    used by your storage to your ``MyStorageBroker.hasher`` attribute
 5. Add implementations for all the public functions in
    ``dtoolcore.storagebroker.DiskStorageBroker`` class to ``MyStorageBroker``
-6. Expose the ``MyStorageBroker`` class as a ``dtool.storage_broker``
+6. Expose the ``MyStorageBroker`` class as a ``dtool.storage_brokers``
    entrypoint, e.g. add a section along the lines of the below to the
-   ``setup.py`` file::
+   ``pyproject.toml`` file::
 
-        entry_points={
-            "dtool.storage_brokers": [
-                "MyStorageBroker=my_dtool_storage_plugin:MyStorageBroker",
-            ],
-        },
+        [project.entry-points."dtool.storage_brokers"]
+        MyStorageBroker = "my_dtool_storage_plugin:MyStorageBroker"
