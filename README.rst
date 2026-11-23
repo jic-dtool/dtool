@@ -66,7 +66,7 @@ Installation::
 There are support packages for several object storage solutions:
 
 - `dtool-s3 <https://github.com/jic-dtool/dtool-s3>`_ - storage broker interface to S3 object storage
-- `dtool-smb <https://github.com/livMatS/dtool-smb>`_ - storage broker interface to smb network share
+- `dtool-smb <https://github.com/jic-dtool/dtool-smb>`_ - storage broker interface to smb network share
 - `dtool-azure <https://github.com/jic-dtool/dtool-azure>`_ - storage broker interface to Azure Storage
 - `dtool-ecs <https://github.com/jic-dtool/dtool-ecs>`_ - storage broker interface to ECS S3 object storage
 - `dtool-irods <https://github.com/jic-dtool/dtool-irods>`_ - storage broker interface to iRODS
