@@ -14,13 +14,6 @@ Added
 Changed
 ^^^^^^^
 
-- Build system switched to hatchling with hatch-vcs; the version is now
-  derived from git tags
-- Pin ``dtool-cli`` 0.7.2, which no longer needs ``pkg_resources``
-- The publish workflow now runs only for version tags: it runs the test
-  suite, checks that the built version matches the tag and publishes to
-  PyPI. Development builds are no longer uploaded to TestPyPI
-
 
 Deprecated
 ^^^^^^^^^^
@@ -29,8 +22,6 @@ Deprecated
 Removed
 ^^^^^^^
 
-- Support for Python < 3.10
-
 
 Fixed
 ^^^^^
@@ -38,6 +29,34 @@ Fixed
 
 Security
 ^^^^^^^^
+
+
+[3.28.0] - 2026-11-24
+---------------------
+
+Added
+^^^^^
+
+- ``dtool annotation delete`` command (dtool-annotation 0.2.0)
+
+Changed
+^^^^^^^
+
+- Build system switched to hatchling with hatch-vcs; the version is now
+  derived from git tags
+- Pin ``dtool-cli`` 0.7.2, which no longer needs ``pkg_resources``
+- Pin the new releases of the core packages, which all require Python >= 3.10
+  and are built with hatchling: dtoolcore 3.20.0, dtool-create 0.23.5,
+  dtool-info 0.16.3, dtool-http 0.5.3, dtool-config 0.4.2, dtool-overlay
+  0.3.2, dtool-annotation 0.2.0 and dtool-tag 0.1.2
+- The publish workflow now runs only for version tags: it runs the test
+  suite, checks that the built version matches the tag and publishes to
+  PyPI. Development builds are no longer uploaded to TestPyPI
+
+Removed
+^^^^^^^
+
+- Support for Python < 3.10
 
 
 [3.27.0] - 2024-07-04
