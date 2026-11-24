@@ -56,7 +56,7 @@ Changed
 - Dynamic versioning from scm tag
 
 
-[3.26.2] - 2022-02-20
+[3.26.2] - 2022-03-20
 ---------------------
 
 Fixed
@@ -108,7 +108,7 @@ Fixed
 
 
 
-[3.25.0] - 2020-03-25
+[3.25.0] - 2020-03-24
 ---------------------
 
 Added support for tags from the dtool CLI.
