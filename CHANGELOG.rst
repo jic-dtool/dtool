@@ -14,6 +14,13 @@ Added
 Changed
 ^^^^^^^
 
+- Build system switched to hatchling with hatch-vcs; the version is now
+  derived from git tags
+- Pin ``dtool-cli`` 0.7.2, which no longer needs ``pkg_resources``
+- The publish workflow now runs only for version tags: it runs the test
+  suite, checks that the built version matches the tag and publishes to
+  PyPI. Development builds are no longer uploaded to TestPyPI
+
 
 Deprecated
 ^^^^^^^^^^
@@ -22,6 +29,8 @@ Deprecated
 Removed
 ^^^^^^^
 
+- Support for Python < 3.10
+
 
 Fixed
 ^^^^^
@@ -29,6 +38,7 @@ Fixed
 
 Security
 ^^^^^^^^
+
 
 [3.27.0] - 2024-07-04
 ---------------------
